@@ -246,3 +246,16 @@ main>section {
     opacity: 1;
     background-color: #1F88BE;
 }
+
+@media screen  and (max-width: 400px) {
+    #crouselSec{
+        color: #FFC41F !important;
+        display: none;
+    }
+
+    #formSec{
+        align-self: center;
+        justify-self: center;
+        width: 800%;
+    }
+}
