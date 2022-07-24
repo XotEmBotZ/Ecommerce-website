@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Lato&family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A1931;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    margin: 27px 0;
+    padding: 0 50px;
+    height: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.navLinks,
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navLinks li,
+.filters li {
+    text-align: left;
+    list-style: none;
+    margin: 0px 2mm;
+    width: max-content;
+    position: relative;
+}
+
+.navLinks li a,
+.filters li a {
+    font: normal normal normal 2em 'Baloo 2';
+    letter-spacing: 0px;
+    color: #EBE8E8;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.navLinks li:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background-color: #EBE8E8;
+}
+
+.filters li:hover:first-child:before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background-color: #EBE8E8;
+}
+
+.filters li input {
+    outline: none;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    color: #FFFFFF;
+    padding: 2mm 2mm 2mm 10mm;
+    border-color: #FFFFFF;
+    background-color: #0A1931;
+    font-size: 1.2rem;
+
+}
+
+main {
+    justify-items: flex-end;
+    height: 80%;
+    display: flex;
+    padding: 0 5cm;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+main h1 {
+    text-align: left;
+    font: normal normal bold 64px/80px Caveat;
+    letter-spacing: 1.28px;
+    color: #F5A425;
+    opacity: 1;
+}
+
+main p {
+    text-align: left;
+    font: normal normal 600 64px/71px Montserrat;
+    letter-spacing: 1.28px;
+    color: #EBE8E8;
+    opacity: 1;
+}
+
+main a {
+    text-align: left;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    letter-spacing: 1.15px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 7%;
+    padding: 15px 60px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #C52C2C;
+}
+
+.bgSec {
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 16rem;
+}
+
+.bgSec .a {
+    background: transparent linear-gradient(151deg, #242A58 0%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bgSec .b {
+    background: transparent linear-gradient(149deg, #483141 0%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bgSec .c {
+    background: transparent linear-gradient(151deg, #123140 0%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
