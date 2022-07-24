@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
-
-:root {
-    --Montserrat: font-family: 'Montserrat', sans-serif;
-    --NotoSans: font-family: 'Noto Sans', sans-serif;
-    --Possins: font-family: 'Poppins', sans-serif;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
 
 * {
     margin: 0px;
@@ -154,21 +147,6 @@ main>section {
     position: relative;
 }
 
-.formSecForm>label[for='keepsignin'] {
-    margin-top: 2%;
-    align-self: flex-start;
-    text-align: left;
-    font: normal normal 600 1rem Noto Sans;
-    letter-spacing: 0px;
-    color: #3D3D3D;
-    opacity: 1;
-}
-
-.formSecForm>label[for='keepsignin']>input {
-    width: 25px;
-    height: 25px;
-}
-
 .formSecForm>button {
     width: 100%;
     background: #183055 0% 0% no-repeat padding-box;
@@ -235,7 +213,7 @@ main>section {
 .OtherLogin {
     width: 50%;
     margin-top: 20px;
-    padding: 20px;
+    padding: 1.5em;
     border-radius: 5px;
     outline: none;
     border: none;

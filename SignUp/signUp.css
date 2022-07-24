@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
 
-:root {
-    --Montserrat: font-family: 'Montserrat', sans-serif;
-    --NotoSans: font-family: 'Noto Sans', sans-serif;
-    --Possins: font-family: 'Poppins', sans-serif;
-
-}
 
 * {
     margin: 0px;
