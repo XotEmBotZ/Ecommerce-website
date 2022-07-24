@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-    <link rel="stylesheet" href="singUp.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <main>
@@ -20,22 +20,18 @@
         </section>
         <section id="formSec">
             <h1 class="formSecHead">KB</h1>
-            <p class="formSecIntro">Already have an account?</p>
+            <button class="OtherLogin">Sign Up with Google</button>
+            <button class="OtherLogin">Sign Up with Facebook</button>
+            <span class="or">OR</span>
+            <p class="formSecIntro">Don't have an account?</p>
             <a href="/login" class="formSecLogin">Login here</a>
             <form action="/singup" method="get" class="formSecForm">
-                <input type="text" name="fullName" id="fullName" title="Full Name" placeholder="Full Name">
                 <input type="text" name="email" id="email" title="Email" placeholder="Email">
                 <input type="password" name="password" id="password" title="Password" placeholder="Password">
-                <label for="keepsignin">
-                    <input type="checkbox" name="keepsignin" id="keepsignin" title="Keep me sign in">
-                    Keep me sign in
-                </label>
                 <button type="submit">SignUp</button>
+                <a href="forgotpass" class="forgotPass">Forgot Password?</a>
                 <p class="pptc">By contoinewing you accept our <a href="privacypolicy">privacy policy</a> & <a href="termsandconditions">terms and condiitions</a></p>
-                <span class="or">OR</span>
             </form>
-                <button class="OtherLogin">Sign Up with Google</button>
-                <button class="OtherLogin">Sign Up with Facebook</button>
             </section>
     </main>
 </body>
