@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Lato&family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 27px;
+    margin-top: 27px;
+    height: 3rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.navLinks,
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navLinks li,
+.filters li {
+    text-align: left;
+    list-style: none;
+    margin: 0px 2mm;
+    width: max-content;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks li a,
+.filters li a {
+    font: normal normal normal 2em 'Baloo 2';
+    letter-spacing: 0px;
+    color: #0A1931;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.navLinks li:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background-color: #0A1931;
+}
+
+.filters li:hover:first-child:before {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background-color: #0A1931;
+}
+
+.filters li input {
+    outline: none;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    color: #0A1931;
+    padding: 2mm 2mm 2mm 10mm;
+    border-color: #0A1931;
+    background-color: #FFFF;
+    font-size: 1.2rem;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading {
+    width: 92%;
+    border-radius: 2rem;
+    background-color: #F9F9F9;
+    padding-top: 2rem;
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    text-align: left;
+    font: normal normal bold 56px/85px Poppins;
+    letter-spacing: 1.12px;
+    color: #183055;
+    position: relative;
+    opacity: 1;
+}
+
+.heading h1:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    left: 25%;
+    top: 100%;
+    background-color: #183055;
+    border-radius: 30px;
+}
+
+.info {
+    margin-top: 44px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.info>span {
+    text-align: left;
+    font: 2rem/25px Montserrat;
+    letter-spacing: 0.21px;
+    color: #0A1931;
+    opacity: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cGreen {
+    color: #2A956D;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    min-height: 1cm;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.items {
+    width: 62%;
+    padding: 45px 4% 4% 3%;
+    background-color: #F9F9F9;
+    border-radius: 1rem;
+}
+
+.items>label {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    font: 1.6rem/25px Montserrat;
+    letter-spacing: 0.42px;
+    color: #183055;
+    opacity: 1;
+}
+
+.items>label>input {
+    width: 20px;
+    height: 20px;
+    margin-right: 1.2rem;
+}
+
+.itemsHr {
+    margin-top: 1rem;
+    border: 3px solid #0A1931;
+    border-radius: 40px;
+}
+
+.bookSelect {
+    width: 20px;
+    height: 20px;
+}
+
+.books {
+    margin: 2.8rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.books div+div {
+    margin-left: 2rem;
+}
+
+.bookDetails {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.bookImg {
+    height: 9.3rem;
+}
+
+.details {
+    display: inline-flex;
+    flex-grow: 1;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+.bookName {
+    text-align: left;
+    font: normal normal 800 2rem/39px Montserrat;
+    font-weight: bold;
+    letter-spacing: 0.64px;
+    color: #183055;
+}
+
+.bookStock {
+    text-align: left;
+    font: normal normal normal 1.35rem/27px Lato;
+    letter-spacing: 0.44px;
+    opacity: 1;
+}
+
+.bookCondition {
+    text-align: left;
+    font: normal normal 1.56rem/34px Montserrat;
+    letter-spacing: 0.13px;
+    color: #183055;
+    opacity: 1;
+}
+
+.bookQuantity {
+    font: normal normal 25px/31px Montserrat;
+    letter-spacing: 0.75px;
+    color: #183055;
+    opacity: 1;
+}
+
+.bookPrices {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bookPrice {
+    text-align: left;
+    font: normal normal 600 1.875rem/48px Montserrat;
+    letter-spacing: 0.3px;
+    color: #0A1931;
+}
+
+.seemore {
+    text-align: left;
+    font: normal normal medium 13px/16px Montserrat;
+    letter-spacing: 0.13px;
+    color: #19A26F;
+    opacity: 1;
+}
+
+.price {
+    width: 25%;
+    border-radius: 15px;
+    background-color: #F9F9F9;
+    padding: 2.12rem 1.56rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.youSaved {
+    text-align: left;
+    font: normal normal 1rem/20px Montserrat;
+    letter-spacing: 0.34px;
+    color: #2A956D;
+    opacity: 1;
+}
+
+.finalPrice {
+    text-align: left;
+    font: normal normal 2rem/39px Montserrat;
+    letter-spacing: 0.64px;
+    color: #183055;
+    opacity: 1;
+}
+
+.smallSymbol {
+    font-size: 1.5rem;
+}
+
+.buyBtn {
+    background: #FFC41F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 85%;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    text-align: center;
+    font: normal normal 600 1.5rem/29px Montserrat;
+    letter-spacing: 0.48px;
+    color: #0A1931;
+    opacity: 1;
+}
