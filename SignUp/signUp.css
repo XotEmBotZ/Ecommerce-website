@@ -56,11 +56,11 @@ main>section {
 }
 
 .crouselImg {
-    position: relative;
-    top: 27%;
-    left: 17%;
-    height: 146px;
-    width: 146px;
+    position: absolute;
+    top: 32%;
+    left: 27%;
+    height: 16vh;
+    width: 16vh;
     border-radius: 50%;
 }
 
