@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Lato&family=Montserrat&family=Noto+Sans:wght@600&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    border-bottom-left-radius: 73px;
+    border-bottom-right-radius: 73px;
+    background-color: #183055;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4.8rem;
+}
+
+.heading {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    width: max-content;
+    text-align: left;
+    font: normal normal 600 2.25rem/55px Poppins;
+    letter-spacing: 1.44px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.cancel {
+    text-align: left;
+    font: normal normal normal 35px/43px Montserrat;
+    letter-spacing: 0.35px;
+    color: #B9BEF1;
+    opacity: 1;
+    text-decoration: none;
+}
+
+nav {
+    /* margin-top: 5.25rem; */
+    position: relative;
+    width: 63%;
+}
+
+nav ul {
+    position: relative;
+    top: 2.75rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001C;
+    border-radius: 9px;
+    opacity: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.25rem;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    padding: 1rem;
+    text-align: left;
+    font: normal normal bold 1.625rem/32px Montserrat;
+    letter-spacing: 0.26px;
+    color: #485C7B;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.navI {
+    position: relative;
+    font-size: 3rem;
+    top: 2.5rem;
+    color: #183055;
+    z-index: 2;
+}
+
+.navIdone {
+    color: #FFC41F;
+}
+
+.navI::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    display: block;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 500px;
+    z-index: -1;
+}
+
+.liBold {
+    color: #183055;
+}
+
+nav ul li+li {
+    border-left: 2px solid #0000001C;
+    padding-left: 15%;
+}
+
+i {
+    width: max-content;
+}
+
+main {
+    background-color: #F3F3F3;
+    padding-top: 5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* gap: 3%; */
+}
+
+.details {
+    width: 62%;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 4mm;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.login>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+
+}
+
+.login>div>div {
+    margin-left: 1.3rem;
+}
+
+.loginIcon {
+    font-size: 1.8rem;
+}
+
+.login h3 {
+    text-align: left;
+    font: normal normal normal 1.1rem/23px Montserrat;
+    letter-spacing: 0.19px;
+    color: #183055;
+    opacity: 1;
+}
+
+.login p {
+    text-align: left;
+    font: normal normal bold 1.1rem/23px Montserrat;
+    letter-spacing: 0.19px;
+    color: #183055;
+    opacity: 1;
+}
+
+.secTitle {
+    padding: 5mm;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    margin-top: 1rem;
+    border: 2px solid #0A1931;
+    display: flex;
+    justify-items: center;
+    font: normal normal bold 21px/25px Montserrat;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    letter-spacing: 0.21px;
+    color: #0A1931;
+}
+
+.shippingAddressForm {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.shippingAddressForm label:not(.notLable) {
+    font: normal normal 1.3rem/18px Montserrat;
+    font-weight: 900;
+    letter-spacing: 0.11px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.shippingAddressForm label input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font: normal normal 600 1.5/30px Montserrat;
+    letter-spacing: 0.25px;
+    color: #0A1931;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.shippingAddressForm label select {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font: normal normal 600 1.5/30px Montserrat;
+    letter-spacing: 0.25px;
+    color: #0A1931;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.lable {
+    font: normal normal 1.3rem/18px Montserrat;
+    font-weight: 900;
+    letter-spacing: 0.11px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.notLable input {
+    height: 1rem;
+    width: 1rem;
+}
+
+.notLable {
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    letter-spacing: 0.11px;
+    color: #344B6E;
+    opacity: 1;
+}
+
+.SubmitBtn {
+    border-radius: 12px;
+    background-color: #05E591;
+    padding: 1.2rem;
+    font-size: 1.68rem;
+    font-family: Montserrat;
+    letter-spacing: 0.27px;
+    outline: none;
+    border: none;
+    margin: auto;
+    font-weight: 900;
+    color: #0A1931;
+    margin-top: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.addrform {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.paymentForm {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.paymentDetails h3 {
+    font: 22px/18px Montserrat;
+    font-weight: 700;
+    letter-spacing: 0.11px;
+    color: #000000;
+}
+
+.paymentDetails label {
+    margin: 2rem;
+    font: 1.3rem/18px Montserrat;
+    font-weight: 800;
+    letter-spacing: 0.11px;
+    color: #344B6E;
+}
+
+.paymentDetails {
+    width: 90%;
+}
+
+.paymentradio {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.paymentradio input {
+    height: 1rem;
+    width: 1rem;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.expectedDelivery {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    letter-spacing: 0.26px;
+    color: #0A1931;
+    position: relative;
+}
+
+.expectedDelivery::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 2.5rem;
+    display: block;
+    content: '';
+    background-color: #000000;
+}
+
+.paymentForm,
+.addrform {
+    margin-left: 3rem;
+}
+
+.itemsandmislenous {
+    width: 35%;
+}
+
+.itemsandmislenous .order {
+    background-color: #FFFFFF;
+    padding: 12%;
+    border-radius: 15px;
+}
+
+.orderTitle {
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    letter-spacing: 0.23px;
+    color: #183055;
+}
+
+hr {
+    border: 3px solid #D5D5D5;
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+
+.orderBook {
+    display: flex;
+    flex-direction: row;
+}
+
+.orderBook img {
+    width: 6rem;
+    margin-right: 3mm;
+}
+
+.orderBookDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.orderBookTitle {
+    font: normal normal bold 23px/28px Montserrat;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    letter-spacing: 0.23px;
+    color: #183055;
+}
+
+.orderBookAuthor {
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #183055;
+}
+
+.orderBookTotalPrice {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.price {
+    letter-spacing: 0px;
+    text-align: left;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 800;
+    color: #0A1931;
+}
+
+.orderBookQty {
+    font-family: 900;
+    letter-spacing: 0.2px;
+    color: #BCBCBC;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+}
+
+.extraAmount li {
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    color: #183055;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.extraAmount li h4{
+    
+    font-weight: 400;
+}
+
+.extraAmountTotal p ,
+.extraAmountTotal h4{
+    font-weight:900 !important;
+}
+
+.promo{
+    margin-top: 5rem;
+}
+
+.promo h3{
+    font: 700 1.3rem/18px Montserrat;
+letter-spacing: 0.1px;
+color: #000000;
+}
+
+.promo input{
+    font-size: 2rem;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-family: Montserrat;
+}
+
+.promo button{
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #183055;
+    outline: none;
+    margin-left: 0.5rem;
+    border: none;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-family: Montserrat;
+}

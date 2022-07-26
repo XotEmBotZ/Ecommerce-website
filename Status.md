@@ -5,7 +5,8 @@
 - password reset
 - password reset OTP
 - singup
+- CHeckout cart page
 
 # In progress
 
-- CHeckout cart page
+- checkout_flow
