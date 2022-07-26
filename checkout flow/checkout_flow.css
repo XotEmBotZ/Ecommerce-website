@@ -469,27 +469,27 @@ hr {
     justify-content: space-between;
 }
 
-.extraAmount li h4{
-    
+.extraAmount li h4 {
+
     font-weight: 400;
 }
 
-.extraAmountTotal p ,
-.extraAmountTotal h4{
-    font-weight:900 !important;
+.extraAmountTotal p,
+.extraAmountTotal h4 {
+    font-weight: 900 !important;
 }
 
-.promo{
+.promo {
     margin-top: 5rem;
 }
 
-.promo h3{
+.promo h3 {
     font: 700 1.3rem/18px Montserrat;
-letter-spacing: 0.1px;
-color: #000000;
+    letter-spacing: 0.1px;
+    color: #000000;
 }
 
-.promo input{
+.promo input {
     font-size: 2rem;
     background-color: #FFFFFF;
     outline: none;
@@ -500,7 +500,7 @@ color: #000000;
     font-family: Montserrat;
 }
 
-.promo button{
+.promo button {
     font-size: 2rem;
     color: #FFFFFF;
     background-color: #183055;
@@ -511,4 +511,36 @@ color: #000000;
     margin-top: 1rem;
     border-radius: 1rem;
     font-family: Montserrat;
+}
+
+.itemsReserved {
+    margin-top: 10rem;
+    text-align: left;
+    font: 2rem/35px Montserrat;
+    letter-spacing: 0.25px;
+    color: #0A1931;
+}
+
+.cGreen {
+    color: #2A956D;
+    font-weight: 900;
+}
+
+.itemsReserved i {
+    margin-right: 1rem;
+    font-size: 2rem;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48;
+}
+
+body{
+    padding-bottom: 5rem;
+    background-color: #F3F3F3;
+}
+
+.dNone{
+    display: none;
 }

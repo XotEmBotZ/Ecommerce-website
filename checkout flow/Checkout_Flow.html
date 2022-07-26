@@ -16,6 +16,7 @@
 				'opsz' 48
 		}
 	</style>
+	<script src="Checkout_Flow.js" defer></script>
 	<link rel="stylesheet" href="checkout_flow.css">
 	<title>Checkout Flow</title>
 </head>
@@ -30,7 +31,7 @@
 			<ul>
 				<li class="shiping liBold">
 					<h2>Shiping</h2>
-					<i class="material-symbols-rounded navI navIdone">check_circle</i>
+					<i class="material-symbols-rounded navI">radio_button_checked</i>
 				</li>
 				<li class="payment">
 					<h2>Payment</h2>
@@ -56,8 +57,9 @@
 				<p class="changelog">CHANGE</p>
 			</div>
 			<div class="shippingAddress">
-				<h2 class="secTitle"><i class="material-symbols-rounded">person_pin_circle</i>Shipping Address</h2>
-				<form action="/" class="addrform">
+				<h2 class="secTitle" data-toggleable="true" id="shipingToggle"><i
+						class="material-symbols-rounded">person_pin_circle</i>Shipping Address</h2>
+				<form action="/" class="addrform dNone" id="shippingForm">
 					<div class="shippingAddressForm">
 
 						<label for="firstNameAddress">First Name *
@@ -98,8 +100,8 @@
 				</form>
 			</div>
 			<div class="paymentMethod">
-				<h2 class="secTitle"><i class="material-symbols-rounded">credit_card</i> PAYMENT METHOD</h2>
-				<form action="" class="paymentForm">
+				<h2 class="secTitle" id="paymentToggle" data-toggleable="true"><i class="material-symbols-rounded">credit_card</i> PAYMENT METHOD</h2>
+				<form action="" class="paymentForm dNone">
 					<div class="paymentDetails">
 
 						<div class="paymentType">
@@ -162,12 +164,14 @@
 				<div class="orderBook">
 					<img src="Mask_Group_43@2x.png" alt="book image">
 					<div class="orderBookDetails">
-						<h3 class="orderBookTitle">
-							Discovery of Withches
-						</h3>
-						<p class="orderBookAuthor">
-							by Author Name
-						</p>
+						<div>
+							<h3 class="orderBookTitle">
+								Discovery of Withches
+							</h3>
+							<p class="orderBookAuthor">
+								by Author Name
+							</p>
+						</div>
 						<div class="orderBookTotalPrice">
 							<h3 class="price"><span class="smallSymbol">₹</span>250</h3>
 							<p class="orderBookQty">x 02</p>
@@ -199,7 +203,8 @@
 					<button><i class="material-symbols-rounded" title="apply">content_copy</i></button>
 				</div>
 			</div>
-			<h2>Items are reserver for <span class="cGreen">60 minutes</span></h2>
+			<h2 class="itemsReserved"><i class="material-symbols-rounded">sell</i>Items are reserver for <span
+					class="cGreen">60 minutes</span></h2>
 		</section>
 	</main>
 </body>
