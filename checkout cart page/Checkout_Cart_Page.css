@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+}
 
 body {
     display: flex;
@@ -92,6 +99,27 @@ nav {
     background-color: #FFFF;
     font-size: 1.2rem;
 
+}
+
+.personal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 3rem;
+}
+
+.headerIcon{
+    font-size: 2.3rem;
+    margin-left: 2rem;
+}
+
+.filterIcon{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%)
 }
 
 main {
