@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    /* color: white; */
 }
 
 body {
@@ -486,7 +486,7 @@ navUlLi:active:hover {
 }
 
 .booksDiv {
-    width: 25%;
+    width: 25rem;
     margin: 1rem;
     /* overflow: hidden; */
     position: relative;
@@ -676,6 +676,221 @@ navUlLi:active:hover {
     align-items: center;
 }
 
-.booksLearnMore:active{
+.booksLearnMore:active {
     background-color: #4F5CEB;
+}
+
+#request {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 4% 8%;
+}
+
+.requestTitle {
+    color: #0A1931;
+    font: normal normal bold 3.5rem Poppins;
+    letter-spacing: 2.24px;
+}
+
+.requestDesc {
+    font: normal normal 500 1.5rem 'Baloo 2';
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+#requestForm {
+    margin-top: 3rem;
+    padding: 5.375rem 3.5rem;
+    background: transparent linear-gradient(250deg, #FFFFFF17 0%, #FFF4D0 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 4px 6px 16px #0A1931;
+    border: 5px solid #0A1931;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 5fr);
+    grid-template-areas:
+        'fName mNo'
+        'email email'
+        'author author'
+        'submit none';
+    gap: 0.8rem;
+}
+
+#requestFirstName,
+#requestMobileNo,
+#requestEmail,
+#requestAuthor {
+    font: normal normal 600 1.3rem Montserrat;
+    letter-spacing: 1.05px;
+    color: #FFFFFF;
+    padding: 1.3rem 2.5rem;
+    background: transparent linear-gradient(261deg, #0A1931 0%, #183055 100%) 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    margin: 0.65rem 0rem;
+}
+
+#requestFirstName {
+    grid-area: fName;
+}
+
+#requestMobileNo {
+    grid-area: mNo;
+}
+
+#requestEmail {
+    grid-area: email;
+}
+
+#requestAuthor {
+    grid-area: author;
+}
+
+#requestSubmitBtn {
+    background: transparent conic-gradient(from 227deg at 50% 50%, #F5A425 0.00%, #D8942A 100.00%) 0% 0% no-repeat padding-box;
+    border: 8px solid #F5A425;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font: 500 1.5rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #0A1931;
+    border-radius: 1rem;
+    grid-area: submit;
+}
+
+#faqSec {
+    background-color: white;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.mainFaqTitle {
+    font: normal normal bold 3.5rem Poppins;
+    letter-spacing: 2.24px;
+    color: #0A1931;
+}
+
+.descFaq {
+    font: normal normal normal 1.8rem 'Baloo 2';
+    letter-spacing: 1.16px;
+    color: #0A1931;
+}
+
+.questions {
+    margin-top: 5.5rem;
+    width: 80%;
+}
+
+.questions details {
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #46464657;
+    border-radius: 9px;
+    margin-bottom: 2.5rem;
+    font: normal normal normal 1.4rem 'Baloo 2';
+    letter-spacing: 0.76px;
+    color: #0A1931;
+}
+
+.questions details summary {
+    text-align: left;
+    font: normal normal 600 1.5rem Montserrat;
+    letter-spacing: 0.88px;
+    color: #0A1931;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questions details summary i {
+    font-size: 2rem;
+}
+
+.cGreen {
+    color: #227455;
+}
+
+#meetUp {
+    background-color: #FFF;
+    padding: 4% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#meetUp div {
+    width: 90%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 18px 15px #526F9A3D;
+    border: 1px solid #1830553D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 3%;
+}
+
+#meetUp h2 {
+    text-align: left;
+    font: normal normal 500 1.5rem Poppins;
+    letter-spacing: 0.96px;
+    color: #0A1931;
+}
+
+#meetUp p {
+    text-align: left;
+    font: normal normal bold 1.875rem Poppins;
+    letter-spacing: 1.2px;
+}
+
+#meetUp form {
+    background: #183055 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+}
+
+#meetUp form input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font: normal normal normal 1.6rem Comfortaa;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+}
+
+#meetUp form button {
+    background: #F5A425 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    font: normal normal bold 1rem Comfortaa;
+    letter-spacing: 0.26px;
+    color: #0A1931;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+#meetUp a {
+    margin-top: 3rem;
+    font: normal normal 500 1.1rem Poppins;
+    letter-spacing: 0.8px;
+    color: #183055;
 }
