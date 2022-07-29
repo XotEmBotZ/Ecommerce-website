@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Comfortaa:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@500;600;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #0A1931;
+}
+
+header nav {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.iconOutlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48 !important;
+}
+
+.navUlLi {
+    font: normal normal normal 1.8rem 'Baloo 2';
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: #FEF8E6;
+}
+
+.navUl li {
+    list-style: none;
+    margin: 0 5%;
+    position: relative;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navUlFirst li:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    border: 1px solid #EBE8E8;
+}
+
+.navUlFirst li:hover a {
+    color: #EBE8E8;
+}
+
+.navUlActive,
+navUlLi:active {
+    color: #F5A425;
+}
+
+.navUlActive::after,
+navUlLi:active:hover {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    border: 1px solid #F5A425;
+}
+
+.navUl li a i {
+    font-size: 2.25rem;
+    vertical-align: middle;
+}
+
+.navUl2 li+li .active {
+    background: #FEF8E6 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: #0A1931;
+    padding: 0.2rem 1rem;
+}
+
+.navUl2 li+li a {
+    border: 2px solid #FEF8E6;
+    border-radius: 5px;
+    padding: 0.2rem 1rem;
+}
+
+.dNone {
+    display: none !important;
+}
+
+.Title {
+    text-align: left;
+    font: normal normal bold 3.5rem Poppins;
+    letter-spacing: 2.24px;
+    color: #FEF8E6;
+    line-height: 4rem;
+}
+
+.cYellow {
+    color: #F5A425;
+}
+
+#titleSec {
+    padding: 8rem 5rem;
+}
+
+.desc {
+    text-align: left;
+    font: normal normal normal 28px/77px Comfortaa;
+    letter-spacing: 0.92px;
+    color: #D5D5D5;
+    margin-top: 1rem;
+}
+
+.titleCatType {
+    background: #FEF8E6 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    padding: 1rem 2rem;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+#searchName {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 80%; */
+}
+
+#searchName div {
+    padding: 0rem 4rem;
+    position: relative;
+}
+
+.bardiv {
+    border-left: 2px solid #0A1931;
+}
+
+#searchName div h3 {
+    font: normal normal bold 1.3rem Comfortaa;
+    letter-spacing: 0.66px;
+    color: #0A1931;
+}
+
+#searchName div p {
+    font: normal normal 300 1rem Comfortaa;
+    letter-spacing: 0.51px;
+    color: #0A1931;
+    margin-top: .5rem;
+}
+
+.titleCatType button {
+    text-align: left;
+    font: normal normal bold 1.5rem Comfortaa;
+    letter-spacing: 0.51px;
+    color: #0A1931;
+    background: #FFC41F 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    padding: 1rem 3rem;
+}
+
+#searchSearch {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#searchSearch select {
+    margin: 1rem 4rem;
+    position: relative;
+    background-color: #FEF8E6;
+    border: none;
+    outline: none;
+    font: normal normal bold 1.2rem Comfortaa;
+    letter-spacing: 0.54px;
+    color: #606060;
+}
+
+#why {
+    display: flex;
+    /* width: 100%; */
+    padding: 4% 8%;
+}
+
+.features {
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h2 {
+    font: normal normal 200 1.8rem Poppins;
+    letter-spacing: 0px;
+    color: #FFFF;
+}
+
+.text h3 {
+    font: normal normal 600 2.75rem Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.text p {
+    text-align: left;
+    font: normal 500 1.8rem 'Baloo 2';
+    letter-spacing: 0.48px;
+    color: #FEF8E6;
+    margin-bottom: 2rem;
+}
+
+.text a {
+    background: transparent conic-gradient(from 260deg at 132% -33%, #F5A425 0.00%, #DB9932 100.00%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    padding: 0.3rem 5rem;
+    text-decoration: none;
+    font: normal normal normal 2rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #0A1931;
+    margin: 4cm 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.featureCard {
+    width: 40%;
+    padding: 1rem 1.1rem;
+    margin: 1rem;
+}
+
+.featureCardIcon {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.featureCardTitle {
+    text-align: left;
+    font: 500 1.6rem Montserrat;
+    letter-spacing: 0.95px;
+    color: #FFFFFF;
+}
+
+.featureCardDetails {
+    font: normal 400 1.3rem 'Baloo 2';
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+}
+
+.fc1,
+.fc3 {
+    position: relative;
+    top: -2.5rem;
+}
+
+.fc2,
+.fc4 {
+    position: relative;
+    top: 2.5rem;
+}
+
+.fc1 {
+    background: transparent linear-gradient(136deg, #272E62 0%, #0B1A33 87%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+}
+
+.fc1 i {
+    background: #4F5CEB 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+}
+
+.fc2 {
+    background: transparent linear-gradient(136deg, #483141 0%, #0B1A33 87%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+}
+
+.fc2 i {
+    background: #FF6D3D 0% 0% no-repeat padding-box;
+}
+
+.fc3 {
+    background: transparent linear-gradient(136deg, #1F4355 0%, #0A1931 88%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+}
+
+.fc3 i {
+    background: #25CFAA 0% 0% no-repeat padding-box;
+}
+
+.fc4 {
+    background: transparent linear-gradient(136deg, #484241 0%, #0A1931 88%, #0A1931 100%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+}
+
+.fc4 i {
+    background: #FFCA40 0% 0% no-repeat padding-box;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .fc1,
+    .fc2,
+    .fc3,
+    .fc4 {
+        top: 0;
+    }
+}
+
+#filterBooks {
+    padding: 4% 8%;
+}
+
+.head1 {
+    font: normal normal 1.75rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #F5A425;
+}
+
+.mainHead {
+    font: normal normal normal 3.25rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #FEF8E6;
+}
+
+.filter {
+    font: normal normal 1.2rem Roboto;
+    letter-spacing: 2.47px;
+    color: #D5D5D5;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.filterDiv {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#filterList {
+    list-style: none;
+    display: flex;
+    background: #173E7A;
+    border-radius: 6px;
+}
+
+#filterList li button {
+    font: normal 500 1.3rem Poppins;
+    letter-spacing: 0.96px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding-bottom: 1rem;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+}
+
+#filterList li:active,
+#filterList li:hover,
+#filterList li[data-isActive=true] {
+    border-radius: 6px;
+    background-color: #15305B;
+    position: relative;
+}
+
+#filterList li:active::after,
+#filterList li:hover::after,
+#filterList li[data-isActive=true]::after {
+    --width: 4px;
+    content: '';
+    position: absolute;
+    background-color: #25CFAA;
+    width: calc(99% - var(--width));
+    left: 0;
+    bottom: 0;
+    border:
+        var(--width) solid #FFFF;
+    border-radius: 6px;
+}
+
+#filterListControlBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+#filterListControlBtn li {
+    font-size: 3rem;
+    padding: 0.3rem;
+    border-radius: 555px;
+    background-color: #FFF;
+    color: #0A1931;
+    margin: 0 1rem;
+}
+
+.categoriesFilter {
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-around;
+    padding: 0 5rem
+}
+
+.categoriesFilter div {
+    width: 7rem;
+}
+
+.categoriesFilter div a {
+    font: normal normal normal 1.2rem Montserrat;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+    color: #CECECE;
+}
+
+.categoriesFilter div img {
+    height: 7rem;
+    background-color: white;
+}
+
+#books {
+    padding: 2% 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#books h2 {
+    font: normal normal 700 3.5rem Poppins;
+    letter-spacing: 2.24px;
+}
+
+#books>div {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.booksDiv {
+    width: 25%;
+    margin: 1rem;
+    /* overflow: hidden; */
+    position: relative;
+    background: #262D60 0% 0% no-repeat padding-box;
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.bookImg {
+    width: 100%;
+    height: 53%;
+}
+
+.bookNamePrice {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.bookName {
+    text-align: left;
+    font: normal 400 1.5rem Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.fsBig {
+    font: normal normal normal 1.3rem Lato;
+    letter-spacing: 0.46px;
+    color: #EBE8E8;
+}
+
+.striked {
+    text-decoration: line-through;
+    font: normal normal normal 0.8rem Lato;
+    letter-spacing: 0.26px;
+    color: #CBCACA;
+}
+
+.booksDiv hr {
+    margin-top: 1rem;
+    border: 1px solid #484e81;
+}
+
+.conditionAndRating {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.condition {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: max-content;
+    font: normal normal 300 1.3rem Montserrat;
+    letter-spacing: 0.24px;
+    color: #EBE8E8;
+    position: relative;
+}
+
+.bookConditionSpan {
+    position: relative;
+}
+
+.bookConditionSpan::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    border: 2px solid #EBE8E8;
+    border-radius: 50px;
+}
+
+.bookRating {
+    display: flex;
+    width: 46%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bookStars {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 100,
+        'GRAD' 200,
+        'opsz' 1rem;
+    display: flex;
+    /* font-size: 1rem; */
+}
+
+.bookStars span {
+    color: #F5A425;
+}
+
+.bookRating .text {
+    font: normal normal normal 1rem Lato;
+    letter-spacing: 0.24px;
+    color: #EBE8E8;
+}
+
+.stockAndShare {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.bookStock {
+    font: normal normal normal 1rem Lato;
+    letter-spacing: 0.3px;
+    color: #FFC41F;
+}
+
+.bookShareBtn {
+    background: transparent;
+    outline: none;
+    border: 2px solid #FFC41F;
+    border-radius: 8px;
+    padding: 0.3rem;
+    color: #FFC41F;
+}
+
+.addToCartBtn {
+    margin: 1rem;
+    outline: none;
+    border: none;
+    background: #FFC41F;
+    color: #0A1931;
+    font: normal 500 2rem 'Baloo 2';
+    letter-spacing: 0.32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+.bookIcon {
+    color: #0A1931;
+    margin: 0.7rem;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48 !important;
+}
+
+.hotSell:before {
+    position: absolute;
+    content: 'HOT SALE';
+    background-color: #FFF;
+    color: #0A1931;
+    padding: 0.5rem 1rem;
+    font: normal normal bold 1rem Montserrat;
+    top: 2rem;
+    left: -10px;
+}
+
+.booksLearnMore {
+    margin-top: 7.125rem;
+    text-align: left;
+    font: normal normal normal 1.3rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #EBE8E8;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid #4F5CEB;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.booksLearnMore:active{
+    background-color: #4F5CEB;
+}
