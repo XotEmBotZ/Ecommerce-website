@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Comfortaa:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@500;600;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: #F9F5F2;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 100vh 1fr;
+	grid-template-areas:
+		'sideBar main'
+		'none main';
+	align-items: stretch;
+	justify-items: stretch;
+	height: 100vh;
+}
+
+.sideBar {
+	background: #F2ECE7 0% 0% no-repeat padding-box;
+	grid-area: sideBar;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100vh ;
+}
+
+.profile {
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.profile img {
+	height: 14.25rem;
+	width: 14.25rem;
+}
+
+.profile h1 {
+	text-align: left;
+	font: normal normal 600 1.8rem Montserrat;
+	letter-spacing: 0.25px;
+	color: #70717D;
+	margin-top: 2.125rem;
+}
+
+#navLinksUl {
+	width: max-content;
+	margin-top: 4rem;
+	list-style: none;
+}
+
+.navLinks {
+	width: max-content;
+	margin: 0;
+	margin-top: 1rem;
+	position: relative;
+	z-index: 1;
+}
+
+.active:before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	bottom: 0rem;
+	left: 0;
+	border: 5px solid #D9D9D9;
+	z-index: -1;
+}
+
+.navLinks a {
+	text-align: left;
+	font: normal normal bold 1.56rem Montserrat;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+	color: #0A1931;
+}
+
+.Content {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 15rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+.mainHead {
+	text-align: left;
+	font: normal normal bold 4.3rem Montserrat;
+	letter-spacing: 0.69px;
+	color: #183055;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.mainHead::before {
+	content: '';
+	display: block;
+	width: 15%;
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+	border: 3px solid #183055;
+	border-radius: 16px;
+}
+
+.order {
+	display: flex;
+	align-self: flex-start;
+	margin-top: 4.25rem;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.order>div{
+	display: flex;
+}
+
+.order>div>img {
+	width: 7.8rem;
+	height: 12.5rem;
+	padding: 3.5rem;
+	background-color: #F2ECE7;
+	border-radius: .5rem;
+	margin-right: 1.5rem;
+}
+
+.orderDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-content: flex-start;
+	justify-content: space-between;
+}
+
+.date {
+	font: normal normal normal 0.8rem Montserrat;
+	letter-spacing: 0.13px;
+	color: #183055;
+}
+
+.orderState {
+	text-align: left;
+	font: normal normal bold 1.5rem Montserrat;
+	letter-spacing: 0.25px;
+	color: #183055;
+}
+
+.orderId,
+.orderAmount {
+	font: normal normal 500 0.8rem Montserrat;
+	letter-spacing: 0.13px;
+	color: #183055;
+}
+
+.bold {
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+
+.otherBooks {
+	display: flex;
+	flex-direction: column;
+}
+
+.otherBooks span {
+	font: normal normal 500 0.8rem Montserrat;
+	letter-spacing: 0.13px;
+	color: #183055;
+}
+
+.otherBooks img {
+	width: 2.5rem;
+	height: 3.5rem;
+	padding: 0.5rem;
+	background-color: #F2ECE7;
+	border-radius: 6px;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	align-items: flex-end;
+}
+
+.options a {
+	font: normal normal 600 0.9rem Montserrat;
+	letter-spacing: 0.42px;
+	color: #183055;
+	text-decoration: none;
+}
