@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Comfortaa:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@500;600;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: #F9F5F2;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 100vh 1fr;
+	grid-template-areas:
+		'sideBar main'
+		'none main';
+	align-items: stretch;
+	justify-items: stretch;
+	height: 100vh;
+}
+
+.sideBar {
+	background: #F2ECE7 0% 0% no-repeat padding-box;
+	grid-area: sideBar;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100vh;
+}
+
+.profile {
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.profile img {
+	height: 14.25rem;
+	width: 14.25rem;
+}
+
+.profile h1 {
+	text-align: left;
+	font: normal normal 600 1.8rem Montserrat;
+	letter-spacing: 0.25px;
+	color: #70717D;
+	margin-top: 2.125rem;
+}
+
+#navLinksUl {
+	width: max-content;
+	margin-top: 4rem;
+	list-style: none;
+}
+
+.navLinks {
+	width: max-content;
+	margin: 0;
+	margin-top: 1rem;
+	position: relative;
+	z-index: 1;
+}
+
+.active:before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	bottom: 0rem;
+	left: 0;
+	border: 5px solid #D9D9D9;
+	z-index: -1;
+}
+
+.navLinks a {
+	text-align: left;
+	font: normal normal bold 1.56rem Montserrat;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+	color: #0A1931;
+}
+
+.Content {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding-top: 15rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+.mainHead {
+	text-align: left;
+	font: normal normal bold 4.3rem Montserrat;
+	letter-spacing: 0.69px;
+	color: #183055;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.mainHead::before {
+	content: '';
+	display: block;
+	width: 15%;
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+	border: 3px solid #183055;
+	border-radius: 16px;
+}
+
+.orderNo {
+	font: normal normal 600 1.25rem Montserrat;
+	letter-spacing: 0.2px;
+	color: #0A1931;
+	margin-bottom: .5rem;
+}
+
+.orderIDHead {
+	font: normal normal bold 1.5rem Montserrat;
+	letter-spacing: 0.63px;
+	color: #183055;
+	margin-top: 4.625rem;
+}
+
+.trackOrderForm {
+	margin-top: 1.875rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2.2rem;
+	width: 100%;
+}
+
+.trackOrderForm button {
+	font: normal normal bold .875rem Montserrat;
+	letter-spacing: 0.84px;
+	color: #FFFFFF;
+	background-color: #0A1931;
+	padding: 1rem 5.8rem;
+}
+
+.trackOrderForm label {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border: 2px solid #0A1931;
+	font: normal normal medium .875rem Montserrat;
+	letter-spacing: 0px;
+	color: #183055;
+}
+
+.trackOrderForm label input {
+	font: normal normal bold .875rem Montserrat;
+	letter-spacing: 1.12px;
+	color: #183055;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+.track {
+	margin-top: 3.75rem;
+	background-color: #0A1931;
+	color: #FFFFFF;
+	width: 100%;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.track summary {
+	list-style: none;
+	font: normal normal 600 1.25rem Montserrat;
+	letter-spacing: 1.08px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.track summary div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.track summary div span {
+	border: 1px solid #FFFFFF;
+	padding: 0.5rem 1rem;
+}
+
+.track summary div i {
+	font-size: 2rem;
+}
+
+.track>hr {
+	margin-top: 2.125rem;
+}
+
+.Track {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	position: relative;
+}
+
+.Track>.dateTime {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5rem;
+}
+
+.Track>.dateTime .bold {
+	font: normal normal 500 1.6rem Montserrat;
+	letter-spacing: 1.08px;
+	color: #F2F2F2;
+}
+
+.Track>.dateTime {
+	font: normal normal normal .875rem Montserrat;
+	letter-spacing: 0.14px;
+	color: #D5D5D5;
+}
+
+.Track .text {
+	position: absolute;
+	left: 10rem;
+	top: 50%;
+	transform: translateY(-50%);
+	letter-spacing: 1.08px;
+}
+
+.mainTrack {
+	padding: 3rem 0;
+}
+
+.mainTrack .text {
+	font: normal normal 600 1.6rem Montserrat;
+	z-index: 2;
+}
+
+.mainTrack .text::before {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: -2.5rem;
+	content: 'assignment';
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 700,
+		'GRAD' 200,
+		'opsz' 48;
+		font-family: 'Material Symbols Outlined';
+		font-size: 1.5rem;
+		padding: 1rem;
+		border-radius: 555555px;
+		background-color: #FF6D3D;
+		z-index: 2;
+	}
+	
+	.Track::after {
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 7.5rem;
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	content: '';
+	border: 2px solid white;
+}
+
+.subTrack .text {
+	font: normal normal 300 1.25rem Montserrat;
+	letter-spacing: 0.4px;
+	color: #EBE8E8;
+	z-index: 2;
+}
+
+.subTrack .text::before{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: -2.5rem;
+	content: 'fiber_manual_record';
+	font-variation-settings:
+		'FILL' 1,
+		'wght' 700,
+		'GRAD' 200,
+		'opsz' 48;
+	font-family: 'Material Symbols Outlined';
+	font-size: 1.5rem;
+	padding: 0.2rem;
+	border-radius: 555555px;
+	background-color: #0A1931;
+	z-index: 3;
+}
