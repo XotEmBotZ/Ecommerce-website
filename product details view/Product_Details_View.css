@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Caveat:wght@700&family=Comfortaa:wght@400;500;600;700&family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700&family=Noto+Sans:wght@500;600;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dNone {
+    display: none;
+}
+
+body {
+    background-color: #0A1931;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+header nav ul {
+    margin: 0rem 1rem;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+}
+
+.navUlLi a {
+    text-align: left;
+    font: normal normal normal 1.8rem 'Baloo 2';
+    letter-spacing: 0px;
+    color: #FEF8E6;
+    text-decoration: none;
+    margin: 0rem 1.25rem;
+}
+
+.navUlLi i {
+    text-align: left;
+    font-size: 1.625rem;
+    letter-spacing: 0px;
+    color: #FEF8E6;
+    text-decoration: none;
+    margin: 0rem .5rem;
+}
+
+.navUlLi {
+    position: relative;
+}
+
+.navUlLi:not(.icoUl li):hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: block;
+    width: 50%;
+    border: 1px solid #FEF8E6;
+}
+
+#mainBook {
+    display: grid;
+    margin: 2rem 6%;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.bookName {
+    font: normal normal bold 2.625rem Montserrat;
+    letter-spacing: 2.1px;
+    color: #EBE8E8;
+}
+
+.priceRating {}
+
+.discountedPrice {
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 2.08px;
+    color: #FFC41F;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 2.08px;
+    color: #D5D5D5;
+}
+
+.originalPriceSave {
+    font: normal normal normal 1.125rem Lato;
+    letter-spacing: 0.72px;
+    color: #ACAFB3;
+}
+
+.ratingStars {
+    font-size: 1rem;
+    color: #FFC41F;
+}
+
+.ratingNo {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #EBE8E8;
+    font: normal normal 500 1.3rem Poppins;
+}
+
+.offers {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.offerBold {
+    font: normal normal 500 1.3rem Montserrat;
+    letter-spacing: 0.42px;
+    color: #4F5CEB;
+}
+
+.offer {
+    font: normal normal 300 1.1rem Montserrat;
+    letter-spacing: 0.72px;
+    color: #8991E8;
+}
+
+.bookCondition {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 1.04px;
+    color: #E5E4E4;
+}
+
+.bookCondition select {
+    margin-left: 1rem;
+    font: normal normal 500 1.5rem Montserrat;
+    background: #4F5CEB29 0% 0% no-repeat padding-box;
+    border: 0.5px solid #4F5CEB;
+    border-radius: 3px;
+    color: #E5E4E4;
+    padding: 1rem;
+}
+
+.qtyStock {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.bookQty {
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 1.04px;
+    color: #E5E4E4;
+}
+
+.bookQty input {}
+
+.qty {
+    font: normal normal 600 1.25rem Montserrat;
+    letter-spacing: 0.4px;
+    color: #FF4D4D;
+}
+
+.btns {
+    margin-top: 3.125rem;
+}
+
+#addToCartBtn {
+    background: #F5A425 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 1rem 2.625rem;
+    font: normal normal 600 1.5rem Montserrat;
+    letter-spacing: 1.25px;
+    color: #0A1931;
+    margin-right: 3.125rem;
+}
+
+#buyNowBtn {
+    background: #05E591 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 1rem 2.625rem;
+    font: normal normal 600 1.5rem Montserrat;
+    letter-spacing: 1.25px;
+    color: #0A1931;
+    margin-right: 3.125rem;
+}
+
+.discription {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc1 {
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 1.04px;
+    color: #E5E4E4;
+}
+
+.desc {
+    font: normal normal 300 1.125rem Montserrat;
+    letter-spacing: 0.72px;
+    color: #8991E8;
+}
+
+.policy {
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.policy span {
+    font: normal normal 500 1.125rem Montserrat;
+    letter-spacing: 0.72px;
+    color: #8991E8;
+    display: flex;
+    align-items: center;
+}
+
+.policy span i{
+    color: #EBE8E8;
+    font-size: 1.6rem ;
+    margin-right: 1rem;
+}
