@@ -18,6 +18,7 @@
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="Product_Details_View.css">
+	<script src="Product_Details_View.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +50,15 @@
 	<main>
 		<p class="pageNavTxt">Books >> Novel</p>
 		<section id="mainBook">
-			<div class="img"></div>
+			<div class="bookImg">
+				<img src="Mask_Group_22@2x.png" alt="img" id="productMainImg">
+				<div class="otherImg">
+					<img src="Mask_Group_22@2x.png" alt="img" id="productSideImg1" class="productSideImg">
+					<img src="Mask_Group_22@2x.png" alt="img" id="productSideImg2" class="productSideImg">
+					<img src="Rectangle_2244@2x.png" alt="img" id="productSideImg4" class="productSideImg">
+					<img src="Mask_Group_22@2x.png" alt="img" id="productSideImg3" class="productSideImg">
+				</div>
+			</div>
 			<div class="details">
 				<h1 class="bookName">How To Influence People</h1>
 				<div class="priceRating">
@@ -95,9 +104,113 @@
 				</div>
 				<div class="policy">
 					<span><i class="material-symbols-outlined">date_range</i> 10 days Return Policy</span>
-					<span><i class="material-symbols-outlined">bar_chart</i>  Shipping Policy</span>
+					<span><i class="material-symbols-outlined">bar_chart</i> Shipping Policy</span>
 				</div>
 			</div>
+		</section>
+		<hr>
+		<section id="frequentlyBoughtTogether">
+			<h2 class="mainHead">Frequently Bought Together</h2>
+			<div class="imgPrice">
+				<div class="booksImg">
+					<img src="Mask_Group_22@2x.png" alt="book1">
+					<span class="symbol">+</span>
+					<img src="Mask_Group_23@2x.png" alt="book2">
+					<span class="symbol">+</span>
+					<img src="Mask_Group_24@2x.png" alt="book3">
+				</div>
+				<div class="price">
+					<span class="totalPrice">Total Price: <span class="cYellow">₹1250</span></span>
+					<button class="addToCartBundle">Add To Cart <i
+							class="material-symbols-outlined">shopping_bag</i></button>
+				</div>
+			</div>
+			<div class="bundleBooks">
+				<label for="bundleBook1">
+					<span class="inputSpan"><input type="checkbox" name="bundleBook1" id="bundleBook1">
+						<span class="mCheckbox material-symbols-outlined">done</span>
+					</span>
+					<span><span class="bold">This Book:</span> Sky is the limit <span class="small">by Peter
+							Theil</span> <span class="cYellow">₹450</span></span>
+				</label>
+				<label for="bundleBook2">
+					<span class="inputSpan"><input type="checkbox" name="bundleBook2" id="bundleBook2">
+						<span class="mCheckbox material-symbols-outlined">done</span>
+					</span>
+					<span>The truth Lies Here <span class="small">by Peter Theil</span> <span
+							class="cYellow">₹300</span></span>
+				</label>
+				<label for="bundleBook3">
+					<span class="inputSpan"><input type="checkbox" name="bundleBook3" id="bundleBook3">
+						<span class="mCheckbox material-symbols-outlined">done</span>
+					</span>
+					<span>The Mysterious deer <span class="small">by Peter Theil</span> <span
+							class="cYellow">₹550</span></span>
+				</label>
+			</div>
+		</section>
+		<section id="buyAndSave">
+			<h2 class="mainHead">Buy Together & Save Together upto 10%</h2>
+			<div class="buyBooks">
+				<div class="book">
+					<label for="buyBookCheck1">
+						<input type="checkbox" name="buyBookCheck1" id="buyBookCheck1" title="buyBook">
+						<span class="checkboxDec material-symbols-outlined"></span>
+					</label>
+					<img src="Mask_Group_22@2x.png" alt="bookImg" class="bookImgBuy">
+					<h3 class="bookTitle">Sky is the Limit</h3>
+					<p class="author">by Peter Thiel</p>
+					<span class="rating">
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star_half</i>
+						<span>(30)</span>
+					</span>
+					<span class="bookPrice">₹450</span>
+				</div>
+				<span class="addSymbol">+</span>
+				<div class="book">
+					<label for="buyBookCheck2">
+						<input type="checkbox" name="buyBookCheck2" id="buyBookCheck2" title="buyBook">
+						<span class="checkboxDec"></span>
+					</label>
+					<img src="Mask_Group_23@2x.png" alt="bookImg" class="bookImgBuy">
+					<h3 class="bookTitle">The Truth Lies Here</h3>
+					<p class="author">by Peter Thiel</p>
+					<span class="rating">
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star_half</i>
+						<span>(30)</span>
+					</span>
+					<span class="bookPrice">₹450</span>
+				</div>
+				<span class="addSymbol">+</span>
+				<div class="book">
+					<label for="buyBookCheck3">
+						<input type="checkbox" name="buyBookCheck3" id="buyBookCheck3" title="buyBook">
+						<span class="checkboxDec"></span>
+					</label>
+					<img src="Mask_Group_24@2x.png" alt="bookImg" class="bookImgBuy">
+					<h3 class="bookTitle">The Mysterious Deer</h3>
+					<p class="author">by Peter Thiel</p>
+					<span class="rating">
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star</i>
+						<i class="material-symbols-outlined">star_half</i>
+						<span>(30)</span>
+					</span>
+					<span class="bookPrice">₹450</span>
+				</div>
+			</div>
+			<h2 class="total">Total Price: <span class="cYellow">₹1250</span></h2>
+			<button class="addToCartBtnBuy">Add To Cart <i class="material-symbols-outlined">shopping_bag</i></button>
 		</section>
 	</main>
 </body>

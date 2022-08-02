@@ -72,6 +72,7 @@ header nav ul {
     margin: 2rem 6%;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    grid-template-areas: 'img desc';
 }
 
 .details {
@@ -79,6 +80,7 @@ header nav ul {
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
+    grid-area: desc;
 }
 
 .bookName {
@@ -241,8 +243,285 @@ header nav ul {
     align-items: center;
 }
 
-.policy span i{
+.policy span i {
     color: #EBE8E8;
-    font-size: 1.6rem ;
+    font-size: 1.6rem;
     margin-right: 1rem;
+}
+
+.pageNavTxt {
+    font: normal normal 500 22px/63px Montserrat;
+    letter-spacing: 1.1px;
+    color: #D5D5D5;
+    padding-left: 2rem;
+}
+
+.bookImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    grid-area: img;
+}
+
+.bookImg>img {
+    height: 30.5rem;
+    padding: .1rem;
+    border: 1px solid #F5A425;
+    border-radius: 5px;
+}
+
+.otherImg {
+    margin-top: 1.6rem;
+}
+
+.otherImg img {
+    height: 6rem;
+    margin: .2rem;
+}
+
+hr {
+    border: 1px solid #D5D5D5;
+    opacity: .25;
+}
+
+#frequentlyBoughtTogether {
+    margin: 2rem 6%;
+}
+
+#frequentlyBoughtTogether .mainHead {
+    font: normal normal 500 2.625rem Montserrat;
+    letter-spacing: 2.1px;
+    color: #EBE8E8;
+}
+
+.imgPrice {
+    margin-top: 3.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.booksImg {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.booksImg img {
+    height: 11.5rem;
+    padding: 2.8rem;
+}
+
+.booksImg span {
+    font-size: 3.5rem;
+    color: #FEF8E6;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.totalPrice {
+    font: normal normal 500 1.625rem Montserrat;
+    letter-spacing: 1.04px;
+    color: #E5E4E4;
+}
+
+.cYellow {
+    color: #F5A425 !important;
+}
+
+.addToCartBundle {
+    margin-top: 1.6rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    text-align: left;
+    font: normal normal 500 1.5rem Montserrat;
+    letter-spacing: 1.15px;
+    color: #0A1931;
+    padding: .5rem 2rem;
+}
+
+.bundleBooks {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputSpan {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    margin-right: 1rem;
+    border: 2px solid #4F5CEB;
+    border-radius: 4px;
+    position: relative;
+}
+
+.inputSpan span {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+
+.inputSpan input:checked~span {
+    background-color: #4F5CEB;
+    display: inline-block !important;
+    color: white;
+    text-align: center;
+}
+
+.inputSpan>input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.bundleBooks label {
+    margin: .25rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font: normal normal 500 1.3rem Montserrat !important;
+    letter-spacing: 0.42px !important;
+    color: #4F5CEB !important;
+}
+
+.bundleBooks label>span:not(.inputSpan) {
+    font: normal normal 300 1.125rem Montserrat;
+    letter-spacing: 0.72px;
+    color: #8991E8;
+}
+
+.small {
+    font: normal normal 300 .75rem Montserrat !important;
+    letter-spacing: 0.48px !important;
+    color: #8991E8 !important;
+}
+
+#buyAndSave {
+    margin: 2rem 6%;
+}
+
+#buyAndSave .mainHead {
+    font: normal normal 500 2.625rem Montserrat;
+    letter-spacing: 2.1px;
+    color: #EBE8E8;
+}
+
+.buyBooks {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.book {
+    width: 16rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.bookImgBuy {
+    width: 16rem;
+    height: 19rem;
+}
+
+.bookTitle {
+    font: normal normal 400 1.25rem Montserrat;
+    letter-spacing: 0.8px;
+    color: #EBE8E8;
+}
+
+.author {
+    font: normal normal 300 .75rem Montserrat;
+    letter-spacing: 0.48px;
+    color: #D5D5D5;
+}
+
+.bookPrice {
+    font: normal normal 500 1.5rem Montserrat;
+    letter-spacing: 1.92px;
+    color: #F5A425;
+}
+
+.total {
+    font: normal normal 500 1.625rem Montserrat;
+    margin-top: 3.75rem;
+    letter-spacing: 1.04px;
+    color: #E5E4E4;
+}
+
+.addToCartBtnBuy {
+    font: normal normal 600 1.5rem Montserrat;
+    letter-spacing: 1.15px;
+    color: #0A1931;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 1rem 2.5rem;
+}
+
+.rating span{
+    font: normal normal 500 1.125rem Poppins;
+    letter-spacing: 0.36px;
+    color: #D5D5D5;
+}
+
+.rating i{
+    font-size: 1rem;
+    color: #F5A425;
+}
+
+.book>label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.book>label input{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 0;
+}
+
+.book>label span{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #4F5CEB;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.book>label input:checked ~ .checkboxDec{
+    content: "done";
 }
