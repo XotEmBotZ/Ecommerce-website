@@ -89,8 +89,6 @@ header nav ul {
     color: #EBE8E8;
 }
 
-.priceRating {}
-
 .discountedPrice {
     font: normal normal 500 1.625rem Montserrat;
     letter-spacing: 2.08px;
@@ -174,8 +172,6 @@ header nav ul {
     letter-spacing: 1.04px;
     color: #E5E4E4;
 }
-
-.bookQty input {}
 
 .qty {
     font: normal normal 600 1.25rem Montserrat;
@@ -1017,7 +1013,8 @@ hr {
 
 .dealDetails{
    padding: 2.5rem;
-   backdrop-filter: blur(15px); 
+   backdrop-filter: blur(15px);
+   --webkit-backdrop-filter: blur(15px); 
    background-color: #ffffff3b;
 }
 
