@@ -20,9 +20,10 @@
         </section>
         <section id="formSec">
             <h1 class="formSecHead">KB</h1>
-            <p class="formSecIntro">Already have an account?</p>
-            <a href="/login" class="formSecLogin">Login here</a>
+            <button class="OtherLogin">Sign Up with Google</button>
+            <button class="OtherLogin">Sign Up with Facebook</button>
             <form action="/singup" method="get" class="formSecForm">
+                <span class="or">OR</span>
                 <input type="text" name="fullName" id="fullName" title="Full Name" placeholder="Full Name">
                 <input type="text" name="email" id="email" title="Email" placeholder="Email">
                 <input type="password" name="password" id="password" title="Password" placeholder="Password">
@@ -31,11 +32,10 @@
                     Keep me sign in
                 </label>
                 <button type="submit">SignUp</button>
+                <p class="formSecIntro">Already have an account?</p>
+                <a href="/login" class="formSecLogin">Login here</a>
                 <p class="pptc">By contoinewing you accept our <a href="privacypolicy">privacy policy</a> & <a href="termsandconditions">terms and condiitions</a></p>
-                <span class="or">OR</span>
             </form>
-                <button class="OtherLogin">Sign Up with Google</button>
-                <button class="OtherLogin">Sign Up with Facebook</button>
             </section>
     </main>
 </body>

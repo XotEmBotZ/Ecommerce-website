@@ -8,6 +8,7 @@
 	<title>Checkout Cart</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="Checkout_Cart_Page.css">
+	<script src="Checkout_Cart_Page.js" defer></script>
 </head>
 
 <body>
@@ -61,36 +62,14 @@
 								<h3 class="bookName">Gone Girl</h3>
 								<p class="bookStock cGreen">In Stock</p>
 								<p class="bookCondition">Condition: <span class="bold">New</span></p>
-								<p class="bookQuantity">Quantity:
-									<span><</span>
-									<input type="number" name="book" min="1" step="1" inputmode="numeric"
-												title="quantity" maxlength="1">
-									<span>></span>
-									</span></p>
-								<p class="seemore">See book like this</p>
-							</div>
-							<div class="bookPrices">
-								<h4 class="bookPriceSymbol">₹<span class="bookPrice">200</span></h4>
-								<i class="bookDelete"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="books">
-					<div><input type="checkbox" name="select" class="bookSelect" title="select"></div>
-					<div class="bookDetails">
-						<img src="Mask_Group_13@2x.png" alt="book image" class="bookImg">
-						<div class="details">
-							<div class="bDetails">
-								<h3 class="bookName">Gone Girl</h3>
-								<p class="bookStock cGreen">In Stock</p>
-								<p class="bookCondition">Condition: <span class="bold">New</span></p>
-								<p class="bookQuantity">Quantity:
-									<span><</span>
-									<input type="number" name="book" min="1" step="1" inputmode="numeric"
-												title="quantity" maxlength="1">
-									<span>></span>
-									</span></p>
+								<div class="bookQuantity">Quantity:
+									<div class="bookQuantityBtn">
+										<button data-direction="down">-</button>
+										<input type="number" name="book" min="1" step="1" value="1" inputmode="numeric"
+										title="quantity" maxlength="1">
+										<button data-direction="up">+</button>
+									</div>
+								</div>
 								<p class="seemore">See book like this</p>
 							</div>
 							<div class="bookPrices">

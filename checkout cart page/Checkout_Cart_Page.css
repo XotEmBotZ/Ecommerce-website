@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ nav {
 
 }
 
-.personal{
+.personal {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -108,12 +108,12 @@ nav {
     font-size: 3rem;
 }
 
-.headerIcon{
+.headerIcon {
     font-size: 2.3rem;
     margin-left: 2rem;
 }
 
-.filterIcon{
+.filterIcon {
     font-size: 2.2rem;
     position: absolute;
     top: 50%;
@@ -286,17 +286,45 @@ main {
 
 .bookCondition {
     text-align: left;
-    font: normal normal 1.56rem/34px Montserrat;
+    font: normal normal 500 1.56rem/34px Montserrat;
     letter-spacing: 0.13px;
     color: #183055;
     opacity: 1;
 }
 
 .bookQuantity {
-    font: normal normal 25px/31px Montserrat;
+    font: normal normal 500 25px/31px Montserrat;
     letter-spacing: 0.75px;
     color: #183055;
     opacity: 1;
+    display: flex;
+}
+
+.bookQuantityBtn {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.bookQuantityBtn * {
+    border: 2px solid #183055;
+    outline: none;
+    padding: 0rem .5rem;
+    font: normal normal normal 1.25rem Lato;
+    letter-spacing: 1.52px;
+    color: #183055;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bookQuantityBtn input {
+    border-left: none;
+    border-right: none;
+    width: 1rem;
+    text-align: center;
 }
 
 .bookPrices {
@@ -370,34 +398,40 @@ main {
     opacity: 1;
 }
 
-@media only screen and (max-width: 480px){
-    header{
+@media only screen and (max-width: 480px) {
+    header {
         display: none;
     }
-    .info{
+
+    .info {
         flex-direction: column;
     }
 
-    .info > *{
+    .info>* {
         margin: 1rem 0rem;
     }
-    .content{
+
+    .content {
         flex-direction: column;
         align-items: stretch;
         width: 100%;
     }
-    .items{
-        width: calc(100% - 1rem );
-        padding: .5rem  ;
+
+    .items {
+        width: calc(100% - 1rem);
+        padding: .5rem;
     }
-    .books{
+
+    .books {
         background-color: rgba(241, 242, 255, 1);
     }
-    .bookDetails{
+
+    .bookDetails {
         /* flex-direction: column; */
         flex-wrap: nowrap;
     }
-    .details{
+
+    .details {
         flex-direction: column;
         align-items: flex-start;
     }
