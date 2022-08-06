@@ -87,7 +87,12 @@
 				</label>
 				<div class="qtyStock">
 					<label for="bookQty" class="bookQty">Quantity:
-						<input type="number" name="bookQty" id="bookQty">
+						<div class="bookQuantityBtn">
+										<button data-direction="down">-</button>
+										<input type="number" name="book" min="1" step="1" value="1" inputmode="numeric"
+										title="quantity" maxlength="1">
+										<button data-direction="up">+</button>
+									</div>
 					</label>
 					<span class="qty">Only 5 left in stock</span>
 				</div>

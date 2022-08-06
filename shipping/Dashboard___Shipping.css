@@ -80,7 +80,7 @@ body {
 
 .navLinks a {
 	text-align: left;
-	font: normal normal bold 1.56rem Montserrat;
+	font: normal normal 700 1.56rem Montserrat;
 	letter-spacing: 0.25px;
 	text-decoration: none;
 	color: #0A1931;
@@ -101,7 +101,7 @@ body {
 
 .mainHead {
 	text-align: left;
-	font: normal normal bold 4.3rem Montserrat;
+	font: normal normal 700 4.3rem Montserrat;
 	letter-spacing: 0.69px;
 	color: #183055;
 	text-transform: uppercase;
@@ -145,7 +145,7 @@ body {
 
 .addAddr {
 	background-color: #FFF;
-	font: normal normal bold 1.3rem Montserrat;
+	font: normal normal 700 1.3rem Montserrat;
 	letter-spacing: 2.1px;
 	color: #0A1931;
 	display: flex;

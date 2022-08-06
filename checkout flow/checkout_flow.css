@@ -73,7 +73,7 @@ nav ul li {
     position: relative;
     padding: 1rem;
     text-align: left;
-    font: normal normal bold 1.625rem/32px Montserrat;
+    font: normal normal 700 1.625rem/32px Montserrat;
     letter-spacing: 0.26px;
     color: #485C7B;
     opacity: 1;
@@ -179,7 +179,7 @@ main {
 
 .login p {
     text-align: left;
-    font: normal normal bold 1.1rem/23px Montserrat;
+    font: normal normal 700 1.1rem/23px Montserrat;
     letter-spacing: 0.19px;
     color: #183055;
     opacity: 1;
@@ -193,7 +193,7 @@ main {
     border: 2px solid #0A1931;
     display: flex;
     justify-items: center;
-    font: normal normal bold 21px/25px Montserrat;
+    font: normal normal 700 21px/25px Montserrat;
     font-size: 2rem;
     font-family: Montserrat;
     font-weight: 900;
@@ -414,7 +414,7 @@ hr {
 }
 
 .orderBookTitle {
-    font: normal normal bold 23px/28px Montserrat;
+    font: normal normal 700 23px/28px Montserrat;
     font-size: 1.5rem;
     font-family: Montserrat;
     font-weight: 900;

@@ -18,7 +18,7 @@ body {
 }
 
 .desc {
-	font: normal normal bold 2.25rem Poppins;
+	font: normal normal 700 2.25rem Poppins;
 	letter-spacing: 0.72px;
 	color: #183055;
 }
@@ -114,7 +114,7 @@ body {
 	color: #0A1931;
 }
 
-.bold {
+.700 {
 	font-size: 1.5rem !important;
 	font-weight: 700 !important;
 }
@@ -148,7 +148,7 @@ body {
 	color: white;
 	padding: .5rem 1rem;
 	text-align: center;
-	font: normal normal bold 23px/34px Poppins;
+	font: normal normal 700 23px/34px Poppins;
 	letter-spacing: 0.46px;
 	color: #FFFFFF;
 }

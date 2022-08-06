@@ -102,7 +102,7 @@ navUlLi:active:hover {
 
 .Title {
     text-align: left;
-    font: normal normal bold 3.5rem Poppins;
+    font: normal normal 700 3.5rem Poppins;
     letter-spacing: 2.24px;
     color: #FEF8E6;
     line-height: 4rem;
@@ -156,7 +156,7 @@ navUlLi:active:hover {
 }
 
 #searchName div h3 {
-    font: normal normal bold 1.3rem Comfortaa;
+    font: normal normal 700 1.3rem Comfortaa;
     letter-spacing: 0.66px;
     color: #0A1931;
 }
@@ -170,7 +170,7 @@ navUlLi:active:hover {
 
 .titleCatType button {
     text-align: left;
-    font: normal normal bold 1.5rem Comfortaa;
+    font: normal normal 700 1.5rem Comfortaa;
     letter-spacing: 0.51px;
     color: #0A1931;
     background: #FFC41F 0% 0% no-repeat padding-box;
@@ -194,7 +194,7 @@ navUlLi:active:hover {
     background-color: #FEF8E6;
     border: none;
     outline: none;
-    font: normal normal bold 1.2rem Comfortaa;
+    font: normal normal 700 1.2rem Comfortaa;
     letter-spacing: 0.54px;
     color: #606060;
 }
@@ -654,7 +654,7 @@ navUlLi:active:hover {
     background-color: #FFF;
     color: #0A1931;
     padding: 0.5rem 1rem;
-    font: normal normal bold 1rem Montserrat;
+    font: normal normal 700 1rem Montserrat;
     top: 2rem;
     left: -10px;
 }
@@ -688,7 +688,7 @@ navUlLi:active:hover {
 
 .requestTitle {
     color: #0A1931;
-    font: normal normal bold 3.5rem Poppins;
+    font: normal normal 700 3.5rem Poppins;
     letter-spacing: 2.24px;
 }
 
@@ -770,7 +770,7 @@ navUlLi:active:hover {
 }
 
 .mainFaqTitle {
-    font: normal normal bold 3.5rem Poppins;
+    font: normal normal 700 3.5rem Poppins;
     letter-spacing: 2.24px;
     color: #0A1931;
 }
@@ -849,7 +849,7 @@ navUlLi:active:hover {
 
 #meetUp p {
     text-align: left;
-    font: normal normal bold 1.875rem Poppins;
+    font: normal normal 700 1.875rem Poppins;
     letter-spacing: 1.2px;
 }
 
@@ -877,7 +877,7 @@ navUlLi:active:hover {
 #meetUp form button {
     background: #F5A425 0% 0% no-repeat padding-box;
     border-radius: 18px;
-    font: normal normal bold 1rem Comfortaa;
+    font: normal normal 700 1rem Comfortaa;
     letter-spacing: 0.26px;
     color: #0A1931;
     outline: none;

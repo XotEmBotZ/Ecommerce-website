@@ -215,7 +215,7 @@ body {
 
 
 #mainContent .filter div button {
-    font: normal normal medium .65rem Montserrat;
+    font: normal normal 500 .65rem Montserrat;
     letter-spacing: 0.33px;
     color: #EBE8E8;
     background-color: #0A1931;
@@ -318,7 +318,7 @@ body {
 }
 
 .trendBook .bookTitle {
-    font: normal normal bold 1.25rem Montserrat;
+    font: normal normal 700 1.25rem Montserrat;
     letter-spacing: 0px;
     color: #C9C3C3;
 }
@@ -503,7 +503,7 @@ body {
     left: -.5rem;
     display: block;
     content: 'HOT SALE';
-    font: normal normal bold .3rem Montserrat;
+    font: normal normal 700 .3rem Montserrat;
     letter-spacing: 0.84px;
     color: #0A1931;
     padding: .25rem .5rem;
@@ -561,7 +561,7 @@ body {
 }
 
 .bookCondition {
-    font: normal normal medium .626rem Montserrat;
+    font: normal normal 500 .626rem Montserrat;
     letter-spacing: 0.2px;
     color: #0A1931;
     border: none;
@@ -648,7 +648,7 @@ body {
     left: .25rem;
     content: 'PREVIEW';
     padding: .5rem;
-    font: normal normal bold .5rem Montserrat;
+    font: normal normal 700 .5rem Montserrat;
     letter-spacing: 1.4px;
     color: rgba(10, 25, 49, 1);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.34);
@@ -661,7 +661,7 @@ body {
     left: .25rem;
     content: 'PREVIEW';
     padding: .5rem;
-    font: normal normal bold .5rem Montserrat;
+    font: normal normal 700 .5rem Montserrat;
     letter-spacing: 1.4px;
     color: rgba(255, 255, 255, 1);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.34);

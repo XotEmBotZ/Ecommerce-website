@@ -144,7 +144,7 @@ main {
 
 .heading h1 {
     text-align: left;
-    font: normal normal bold 56px/85px Poppins;
+    font: normal normal 700 56px/85px Poppins;
     letter-spacing: 1.12px;
     color: #183055;
     position: relative;
@@ -179,7 +179,7 @@ main {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .cGreen {
@@ -272,7 +272,7 @@ main {
 .bookName {
     text-align: left;
     font: normal normal 800 2rem/39px Montserrat;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 0.64px;
     color: #183055;
 }
@@ -344,7 +344,7 @@ input::-webkit-inner-spin-button {
 
 .seemore {
     text-align: left;
-    font: normal normal medium 13px/16px Montserrat;
+    font: normal normal 500 13px/16px Montserrat;
     letter-spacing: 0.13px;
     color: #19A26F;
     opacity: 1;

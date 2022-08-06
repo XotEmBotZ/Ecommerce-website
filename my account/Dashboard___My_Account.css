@@ -80,7 +80,7 @@ body {
 
 .navLinks a {
 	text-align: left;
-	font: normal normal bold 1.56rem Montserrat;
+	font: normal normal 700 1.56rem Montserrat;
 	letter-spacing: 0.25px;
 	text-decoration: none;
 	color: #0A1931;
@@ -100,7 +100,7 @@ body {
 
 .mainHead {
 	text-align: left;
-	font: normal normal bold 4.3rem Montserrat;
+	font: normal normal 700 4.3rem Montserrat;
 	letter-spacing: 0.69px;
 	color: #183055;
 	text-transform: uppercase;
@@ -132,7 +132,7 @@ body {
 }
 
 .accountForm .formHead {
-	font: normal normal bold 1.56rem Montserrat;
+	font: normal normal 700 1.56rem Montserrat;
 	letter-spacing: 0.63px;
 	color: #183055;
 	grid-area: head;
@@ -169,7 +169,7 @@ body {
 }
 
 .accountForm label input {
-	font: normal normal bold .875rem Montserrat;
+	font: normal normal 700 .875rem Montserrat;
 	letter-spacing: 0.28px;
 	color: #183055;
 	background: transparent;
@@ -179,7 +179,7 @@ body {
 
 .accountForm button {
 	background-color: #0A1931;
-	font: normal normal bold .875rem Montserrat;
+	font: normal normal 700 .875rem Montserrat;
 	letter-spacing: 0.84px;
 	color: #FFFFFF;
 	padding: 1.125rem 5.8125rem;
@@ -191,7 +191,7 @@ body {
 }
 
 .bioForm .formHead {
-	font: normal normal bold 1.5625rem Montserrat;
+	font: normal normal 700 1.5625rem Montserrat;
 	letter-spacing: 0.63px;
 	color: #0A1931;
 }

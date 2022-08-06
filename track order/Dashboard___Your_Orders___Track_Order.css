@@ -80,7 +80,7 @@ body {
 
 .navLinks a {
 	text-align: left;
-	font: normal normal bold 1.56rem Montserrat;
+	font: normal normal 700 1.56rem Montserrat;
 	letter-spacing: 0.25px;
 	text-decoration: none;
 	color: #0A1931;
@@ -100,7 +100,7 @@ body {
 
 .mainHead {
 	text-align: left;
-	font: normal normal bold 4.3rem Montserrat;
+	font: normal normal 700 4.3rem Montserrat;
 	letter-spacing: 0.69px;
 	color: #183055;
 	text-transform: uppercase;
@@ -126,7 +126,7 @@ body {
 }
 
 .orderIDHead {
-	font: normal normal bold 1.5rem Montserrat;
+	font: normal normal 700 1.5rem Montserrat;
 	letter-spacing: 0.63px;
 	color: #183055;
 	margin-top: 4.625rem;
@@ -141,7 +141,7 @@ body {
 }
 
 .trackOrderForm button {
-	font: normal normal bold .875rem Montserrat;
+	font: normal normal 700 .875rem Montserrat;
 	letter-spacing: 0.84px;
 	color: #FFFFFF;
 	background-color: #0A1931;
@@ -153,13 +153,13 @@ body {
 	flex-direction: column;
 	padding: 1rem;
 	border: 2px solid #0A1931;
-	font: normal normal medium .875rem Montserrat;
+	font: normal normal 500 .875rem Montserrat;
 	letter-spacing: 0px;
 	color: #183055;
 }
 
 .trackOrderForm label input {
-	font: normal normal bold .875rem Montserrat;
+	font: normal normal 700 .875rem Montserrat;
 	letter-spacing: 1.12px;
 	color: #183055;
 	background: transparent;
@@ -220,7 +220,7 @@ body {
 	margin-right: 5rem;
 }
 
-.Track>.dateTime .bold {
+.Track>.dateTime .700 {
 	font: normal normal 500 1.6rem Montserrat;
 	letter-spacing: 1.08px;
 	color: #F2F2F2;

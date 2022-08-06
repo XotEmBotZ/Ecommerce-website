@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -82,7 +84,7 @@ header nav ul {
 }
 
 .bookName {
-    font: normal normal bold 2.625rem Montserrat;
+    font: normal normal 700 2.625rem Montserrat;
     letter-spacing: 2.1px;
     color: #EBE8E8;
 }
@@ -170,6 +172,45 @@ header nav ul {
     letter-spacing: 1.04px;
     color: #E5E4E4;
 }
+
+
+.bookQuantity {
+    font: normal normal 500 25px/31px Montserrat;
+    letter-spacing: 0.75px;
+    color: #183055;
+    opacity: 1;
+    display: flex;
+}
+
+.bookQuantityBtn {
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bookQuantityBtn * {
+    border: 2px solid #D5D5D5;
+    outline: none;
+    padding: 0rem .5rem;
+    font: normal normal normal 1.25rem Lato;
+    letter-spacing: 1.52px;
+    color: #D5D5D5;
+    background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bookQuantityBtn input {
+    border-left: none;
+    border-right: none;
+    width: 1rem;
+    text-align: center
+}
+
 
 .qty {
     font: normal normal 600 1.25rem Montserrat;
@@ -1009,11 +1050,11 @@ hr {
     padding: 3.5rem;
 }
 
-.dealDetails{
-   padding: 2.5rem;
-   backdrop-filter: blur(15px);
-   --webkit-backdrop-filter: blur(15px); 
-   background-color: #ffffff3b;
+.dealDetails {
+    padding: 2.5rem;
+    backdrop-filter: blur(15px);
+    --webkit-backdrop-filter: blur(15px);
+    background-color: #ffffff3b;
 }
 
 .dealHead,
@@ -1025,10 +1066,10 @@ hr {
 }
 
 .dealBtn {
-    font: normal normal 600 1.5rem  Montserrat;
+    font: normal normal 600 1.5rem Montserrat;
     letter-spacing: 1.38px;
     color: #0A1931;
     border-radius: 3rem;
     border: none;
-    padding: 1rem 3rem ;
+    padding: 1rem 3rem;
 }

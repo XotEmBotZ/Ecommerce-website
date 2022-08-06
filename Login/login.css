@@ -48,7 +48,7 @@ main>section {
 .crouselp1 {
     top: 16px;
     text-align: left;
-    font: normal normal medium 14px/21px Montserrat;
+    font: normal normal 500 14px/21px Montserrat;
     letter-spacing: 0.28px;
     color: #FFC41F;
 }
@@ -70,7 +70,7 @@ main>section {
     left: 14%;
     width: max-content;
     margin: 0;
-    font: normal normal medium 20px/54px Montserrat;
+    font: normal normal 500 20px/54px Montserrat;
     letter-spacing: 0px;
     color: #C9C3C3;
     opacity: 1;
@@ -83,7 +83,7 @@ main>section {
     width: 80%;
     margin: 0;
     text-align: left;
-    font: normal normal bold 39px/44px Montserrat;
+    font: normal normal 700 39px/44px Montserrat;
     letter-spacing: 0px;
     color: #C9C3C3;
     opacity: 1;
@@ -101,7 +101,7 @@ main>section {
 .formSecHead {
     font-size: 3rem;
     text-align: left;
-    font: normal normal bold 48px/62px Poppins;
+    font: normal normal 700 48px/62px Poppins;
     letter-spacing: 1.92px;
     color: #0A1931;
     opacity: 1;
@@ -112,7 +112,7 @@ main>section {
     margin-top: 2%;
     text-align: center;
     text-align: center;
-    font: normal normal bold 1rem Montserrat;
+    font: normal normal 700 1rem Montserrat;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
@@ -120,7 +120,7 @@ main>section {
 
 .formSecLogin {
     text-align: center;
-    font: normal normal bold 1rem Montserrat;
+    font: normal normal 700 1rem Montserrat;
     letter-spacing: 0px;
     opacity: 1;
     text-decoration: none;
@@ -218,7 +218,7 @@ main>section {
     outline: none;
     border: none;
     text-align: center;
-    font: normal normal bold 12px/15px Montserrat;
+    font: normal normal 700 12px/15px Montserrat;
     letter-spacing: 0.6px;
     color: #FFFFFF;
     text-transform: capitalize;
@@ -229,7 +229,7 @@ main>section {
 .forgotPass {
     text-align: center;
     text-decoration: underline;
-    font: normal normal bold 1rem Montserrat;
+    font: normal normal 700 1rem Montserrat;
     letter-spacing: 0px;
     color: #000000;
     margin-top: 25px;
