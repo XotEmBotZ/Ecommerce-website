@@ -370,3 +370,36 @@ main {
     color: #0A1931;
     opacity: 1;
 }
+
+@media only screen and (max-width: 480px){
+    header{
+        display: none;
+    }
+    .info{
+        flex-direction: column;
+    }
+
+    .info > *{
+        margin: 1rem 0rem;
+    }
+    .content{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .items{
+        width: calc(100% - 1rem );
+        padding: .5rem  ;
+    }
+    .books{
+        background-color: rgba(241, 242, 255, 1);
+    }
+    .bookDetails{
+        /* flex-direction: column; */
+        flex-wrap: nowrap;
+    }
+    .details{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
