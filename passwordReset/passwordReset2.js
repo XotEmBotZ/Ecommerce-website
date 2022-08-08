@@ -34,7 +34,6 @@ checkPassword = (passowrd) => {
     // Validate length
     if (passowrd.length >= 8) {
         alltrue=alltrue&&true
-        console.log("Woring",passowrdValidationClone.getElementById("numberAndSymbol"))
         passowrdValidationClone.getElementById("charLength").classList.add('fulfiled')
     }else{
         alltrue=alltrue&&false
@@ -47,4 +46,16 @@ checkPassword = (passowrd) => {
 }
 password.addEventListener('keyup', e => {
     checkPassword(password.value)
+})
+
+repeatPassword.addEventListener('keyup',e=>{
+    passwordRepeatValidation.innerHTML=''
+    console.log("working")
+    if (password.value==repeatPassword.value){
+        repeatPassword.parentElement.classList.add("correct")
+    }else{
+        repeatPassword.parentElement.classList.remove("correct")
+        let passowrdValidationClone = passwordRepeatValidationTemplate.content.cloneNode(true)
+        passwordRepeatValidation.appendChild(passowrdValidationClone)
+    }
 })
