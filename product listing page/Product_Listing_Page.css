@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    z-index: 10;
+}
+
 .dNone {
     display: none;
 }
@@ -11,14 +15,22 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     width: 95%;
-    margin: auto;
-    margin-bottom: 27px;
-    margin-top: 27px;
+    padding-bottom: 27px;
+    padding-top: 27px;
     height: 3rem;
+    background-color: #0a1931;
+    width: 100%;
+}
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 .navLinks,
