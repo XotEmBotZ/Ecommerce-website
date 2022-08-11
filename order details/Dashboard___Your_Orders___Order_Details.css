@@ -161,3 +161,24 @@ body {
 	letter-spacing: 0.4px;
 	color: #0A1931;
 }
+
+
+@media only screen and (max-width: 480px) {
+	body{
+		grid-template-columns: 0px 1fr;
+	}
+	.sideBar{
+		display: none;
+	}
+	.Content{
+		margin: 0;
+		padding: 5vw;
+	}
+	.Content>.address{
+		grid-template-columns: 1fr;
+	}
+
+	.details{
+		margin: 1rem 0px;
+	}
+}

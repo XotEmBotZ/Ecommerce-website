@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -212,6 +214,7 @@ body {
 	align-items: center;
 	align-content: center;
 	position: relative;
+	height: max-content;
 }
 
 .Track>.dateTime {
@@ -220,7 +223,7 @@ body {
 	margin-right: 5rem;
 }
 
-.Track>.dateTime .700 {
+.Track>.dateTime {
 	font: normal normal 500 1.6rem Montserrat;
 	letter-spacing: 1.08px;
 	color: #F2F2F2;
@@ -260,15 +263,15 @@ body {
 		'wght' 700,
 		'GRAD' 200,
 		'opsz' 48;
-		font-family: 'Material Symbols Outlined';
-		font-size: 1.5rem;
-		padding: 1rem;
-		border-radius: 555555px;
-		background-color: #FF6D3D;
-		z-index: 2;
-	}
-	
-	.Track::after {
+	font-family: 'Material Symbols Outlined';
+	font-size: 1.5rem;
+	padding: 1rem;
+	border-radius: 555555px;
+	background-color: #FF6D3D;
+	z-index: 2;
+}
+
+.Track::after {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	left: 7.5rem;
@@ -286,7 +289,7 @@ body {
 	z-index: 2;
 }
 
-.subTrack .text::before{
+.subTrack .text::before {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -303,4 +306,41 @@ body {
 	border-radius: 555555px;
 	background-color: #0A1931;
 	z-index: 3;
+}
+
+
+@media only screen and (max-width: 480px) {
+	body {
+		grid-template-columns: 0px 1fr;
+		width: 100vw;
+		height: max-content;
+	}
+
+	.sideBar {
+		display: none;
+	}
+
+	.Content {
+		margin: 0;
+		width: calc(100vw - 5vw);
+		padding: 5vw;
+		height: max-content;
+	}
+
+	.Content>.address {
+		grid-template-columns: 1fr;
+	}
+
+	.trackOrderForm {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.Track{
+		padding-bottom: 5rem;
+		padding-top: 5rem;
+	}
+	.track{
+		width: 90%;
+	}
 }
