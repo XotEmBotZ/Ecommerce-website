@@ -124,7 +124,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
-	grid-auto-rows: 14rem;
+	/* grid-auto-rows: 14rem; */
 	gap: 2.25rem;
 	padding-bottom: 5rem;
 }
@@ -152,4 +152,20 @@ body {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+	body{
+		grid-template-columns: 0px 1fr;
+	}
+	.sideBar{
+		display: none;
+	}
+	.Content{
+		margin: 0;
+		padding: 5vw;
+	}
+	.Content>.address{
+		grid-template-columns: 1fr;
+	}
 }
