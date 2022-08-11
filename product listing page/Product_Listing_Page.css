@@ -377,7 +377,7 @@ body {
 }
 
 .hotSell {
-    width: 15rem;
+    width: 20rem;
     background: #262D60 0% 0% no-repeat padding-box;
     border-radius: 20px 20px 10px 10px;
     color: white;
@@ -401,20 +401,21 @@ body {
 
 
 .hotSell .bookNamePrice .bookName {
-    font: normal normal normal 1rem Montserrat;
+    font: normal normal normal 1.75rem Montserrat;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
 
 
 .hotSell .bookNamePrice .bookPrice {
-    font: normal normal normal 1rem Lato;
+    font: normal normal normal 1.5rem Lato;
     letter-spacing: 0.34px;
     color: #EBE8E8;
 }
 
 .hotSell .bookNamePrice .bookPrice .striked {
-    font: normal normal normal .6rem Lato;
+    font: normal normal normal 1rem Lato;
+    text-decoration: line-through;
     letter-spacing: 0.18px;
     color: #cbcacab0;
 }
@@ -434,7 +435,7 @@ body {
 
 .hotSell .conditionAndRating .bookConditionSpan select {
     text-align: left;
-    font: normal normal 300 .5rem Montserrat;
+    font: normal normal 300 1rem Montserrat;
     letter-spacing: 0.16px;
     color: #EBE8E8;
     background-color: transparent;
@@ -449,7 +450,7 @@ body {
 }
 
 .hotSell .conditionAndRating .bookRating .text {
-    font: normal normal normal .5rem Lato;
+    font: normal normal normal 1rem Lato;
     letter-spacing: 0.16px;
     color: #EBE8E8;
 }
@@ -459,7 +460,7 @@ body {
 }
 
 .hotSell .conditionAndRating .bookRating .bookRatingStars {
-    font-size: 1rem;
+    font-size: 1.25rem;
     width: 1rem;
     height: 1rem;
     color: #FFC41F;
@@ -473,7 +474,7 @@ body {
 }
 
 .hotSell .stockAndShare .bookStock {
-    font: normal normal normal .75rem Lato;
+    font: normal normal normal 1rem Lato;
     letter-spacing: 0.2px;
     color: #FFC41F;
 }
@@ -481,10 +482,10 @@ body {
 .hotSell .stockAndShare .bookShareBtn {
     color: #C99E2F;
     background-color: transparent;
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border: 2px solid #C99E2F;
-    font-size: .75rem;
+    font-size: 1rem;
     border-radius: .25rem;
 }
 
@@ -496,9 +497,9 @@ body {
     justify-content: center;
     border: none;
     border-radius: 5px;
-    font: normal normal 500 .75rem 'Baloo 2';
+    font: normal normal 500 10rem 'Baloo 2';
     letter-spacing: 0.22px;
-    font-size: .75rem !important;
+    font-size: 1.25rem !important;
     color: #0A1931;
 }
 
@@ -506,7 +507,7 @@ body {
 .hotSell .addToCartBtn>span {
     width: .75rem;
     height: .75rem;
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .hotSell::before {
@@ -515,7 +516,7 @@ body {
     left: -.5rem;
     display: block;
     content: 'HOT SALE';
-    font: normal normal 700 .3rem Montserrat;
+    font: normal normal 700 .7rem Montserrat;
     letter-spacing: 0.84px;
     color: #0A1931;
     padding: .25rem .5rem;
@@ -539,13 +540,13 @@ body {
 
 .mainBook>img {
     border-radius: 11px;
-    width: 15rem;
+    width: 20rem;
     margin-right: 1.5rem;
 }
 
 .bookHead {
     text-align: left;
-    font: normal normal 700 1.25rem Montserrat;
+    font: normal normal 700 1.75rem Montserrat;
     letter-spacing: 0px;
     color: #0A1931;
     padding-bottom: .5rem;
@@ -557,11 +558,11 @@ body {
 }
 
 .rating {
-    font-size: .5rem !important;
+    font-size: 1rem !important;
 }
 
 .rating i {
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     color: #FFC41F;
 }
 
@@ -573,7 +574,7 @@ body {
 }
 
 .bookCondition {
-    font: normal normal 500 .626rem Montserrat;
+    font: normal normal 500 1rem Montserrat;
     letter-spacing: 0.2px;
     color: #0A1931;
     border: none;
@@ -583,24 +584,26 @@ body {
 .priceStock {
     display: flex;
     align-items: center;
+    margin: .5rem 0rem ;
+
 }
 
 .price {
-    font: normal normal normal 1.125rem Lato;
+    font: normal normal normal 1.5rem Lato;
     letter-spacing: 0.36px;
     color: #0A1931;
 }
 
 .oriPrice {
     text-decoration: line-through;
-    font: normal normal normal .75rem Lato;
+    font: normal normal normal 1.25rem Lato;
     letter-spacing: 0.23px;
     color: rgb(10, 25, 49, 0.76);
     margin-right: 7px;
 }
 
 .save {
-    font: normal normal normal .625rem Lato;
+    font: normal normal normal .9rem Lato;
     letter-spacing: 0.4px;
     color: rgb(69, 80, 98, 0.8);
     margin-right: 1rem;
@@ -610,28 +613,30 @@ body {
     display: flex;
     align-items: center;
     align-content: center;
+    margin: .5rem 0rem ;
 }
 
 .stock {
-    font: normal normal 600 .625rem Montserrat;
+    font: normal normal 600 .9rem Montserrat;
     letter-spacing: 0.2px;
     color: rgba(214, 57, 57, 1);
 }
 
 .desc {
     text-align: left;
-    font: normal normal 500 .75rem Montserrat;
+    font: normal normal 500 1rem Montserrat;
     letter-spacing: 0.3px;
     color: rgba(24, 48, 85, 0.91);
+    margin: .5rem 0rem ;
 }
 
 .bookBtn {
-    font: normal normal 500 1rem Montserrat;
+    font: normal normal 500 1.5rem Montserrat;
     letter-spacing: 0px;
     color: rgba(255, 255, 255, 1);
     padding: .5rem;
     background-color: rgba(10, 25, 49, 1);
-    font-size: .625rem !important;
+    font-size: 1rem !important;
     border: none;
     outline: none;
     margin: 1rem 0rem;
