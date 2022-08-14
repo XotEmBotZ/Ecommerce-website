@@ -1097,3 +1097,175 @@ footer nav {
 .articles .details{
     display: var(--detailsDisplay);
 }
+
+@media only screen and (max-width : 480px) {
+    header nav{
+        flex-direction: column ;
+        gap: 1rem;
+        align-items: center;
+    }
+    .navUl{
+        flex-direction: column;
+    }
+    .navUl>*+*{
+        margin-top: 1rem !important;
+    }
+    section{
+        padding: 10vw 5vw !important;
+    }
+    .Title{
+        font-size: 1.99rem !important ;
+    }
+    .titleCatType{
+        flex-direction: column ;
+        padding: 5px;
+        width: 100% ;
+    }
+    #searchName{
+        flex-direction: column ;
+    }
+    #searchName div{
+        align-content: center;
+        text-align: center;
+    }
+    .bardiv{
+        margin-top:  1rem;
+        border: none;
+        padding: 1rem !important;
+        border-top: 2px solid #0A1931;
+    }
+    #searchName div h3{
+        font: normal normal 700 2rem Comfortaa;
+    }
+    #searchName div p{
+        font: normal normal 700 1.5rem Comfortaa;
+    }
+    #why{
+        flex-direction: column ;
+    }
+    .features{
+        width: 90%;
+    }
+    .featureCard{
+        width: 100%;
+    }
+    #why .text{
+        width: 90%;
+    }
+    .text a{
+        text-align: center ;
+        padding: 1rem ;
+    }
+    .filterDiv{
+        flex-direction: column;
+    }
+    #filterList{
+        flex-direction: column;
+    }
+    #filterListControlBtn{
+        padding-top: 2rem ;
+    }
+    .categoriesFilter{
+        padding: 1rem ;
+        flex-wrap: wrap;
+    }
+    .booksDiv{
+        width: 100%;
+    }
+    .booksLearnMore{
+        margin-top: 2.5rem;
+    }
+    #requestForm{
+        padding: 1rem ;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+            'fName'
+            'mNo'
+            'email'
+            'author'
+            'submit' ;
+    }
+    #requestForm > *{
+        padding: 1rem ;
+    }
+    .questions{
+        width: 100% ;
+    }
+    .questions details{
+        padding: 1rem ;
+        width: 90%;
+    }
+    #meetUp form{
+        flex-direction: column ;
+    }
+    #newsAndBlogs>div{
+        flex-direction: column ;
+    }
+    .articles{
+        width: 90%;
+        padding: 5%;
+        margin: 5% ;
+    }
+    .newsLatterSubscribe label{
+        text-align: center;
+    }
+    .newsLatterSubscribe{
+        flex-wrap: wrap;
+        justify-content: center ;
+        align-items: center ;
+    }
+    .newsLatterSubscribe form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsLatterSubscribe form button{
+        margin: 1rem 0rem 0rem 0rem ;
+    }
+    footer nav{
+        flex-wrap: wrap ;
+    }
+    .footerNavDiv{
+        margin-top: 2.5rem;
+    }
+    .footerNavDiv .footerMainHead{
+        text-align: center;
+    }
+    #books>div {
+        width: 90%;
+    }
+    .bookName{
+        font-size: 1rem ;
+    }
+    .bookNamePrice{
+        margin: .5rem; 
+    }
+    .fsBig{
+        font-size: .75rem;
+    }
+    .striked{
+        font-size: .5rem; 
+    }
+    .booksDiv hr{
+        margin-top: .5rem; 
+    }
+    .conditionAndRating{
+        flex-wrap: wrap;
+    }
+    .conditionAndRating select{
+        font-size: 1.25rem ;
+    }
+    .bookRating{
+        width: 100%;
+        margin-top: .5rem;
+    }
+    .bookRating *{
+        font-size: 1.1rem !important; 
+    }
+    .addToCartBtn{
+        font-size: 1.25rem;
+    }
+    .hotSell:before{
+        font-size: .75rem;
+    }
+}
