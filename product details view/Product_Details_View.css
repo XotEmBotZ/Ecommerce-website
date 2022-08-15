@@ -1073,3 +1073,115 @@ hr {
     border: none;
     padding: 1rem 3rem;
 }
+
+@media only screen and (max-width : 480px){
+    header nav{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #mainBook{
+        display: flex;
+        flex-direction: column;
+    }
+    .bookImg{
+        height: max-content;
+    }
+    .bookImg>img{
+        width: 100%;
+        height: auto;
+    }
+    .bookImg .otherImg{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center ;
+    }
+    .bookImg .otherImg img{
+        width: 24%;
+        height: auto;
+    }
+    .bookCondition,
+    .qtyStock,
+    .bookQty{
+        font-size: 1.25rem;
+    }
+    #bookCondition{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .btns > *{
+        margin: 0 !important;
+    }
+    .details{
+        align-items: center;
+        align-content: center;
+    }
+    .imgPrice{
+        flex-direction: column;
+    }
+    .imgPrice .booksImg{
+        flex-direction: column;
+    }
+    .buyBooks{
+        flex-direction: column;
+    }
+    #rating{
+        margin: .5rem !important;
+        padding: .5rem;
+    }
+    .mainHeadFlex{
+        flex-direction: column;
+    }
+    .metrics{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .bar{
+        width: 10rem;
+    }
+    .imgs{
+        width: 100%;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .imgs *{
+        padding: .5rem;
+    }
+    #rating>div{
+        padding: 1rem ;
+    }
+    .customerReviews{
+        width: 90%;
+        margin: 0px ;
+    }
+    .customerReviews .head{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #more{
+        margin: .5rem;
+    }
+    .scrollDiv{
+        margin: .5rem;
+    }
+    #trendingDeals{
+        margin: .5rem; 
+    }
+    .deals{
+        flex-direction: column;
+    }
+    .deal{
+        width: 90%;
+    }
+    .navUl:not(.icoUl){
+        align-items: flex-start;
+    }
+    .navUlLi{
+        text-align: center;
+    }
+}
