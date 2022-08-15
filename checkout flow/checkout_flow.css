@@ -229,7 +229,7 @@ main {
     font-weight: 600;
     font-size: 1.5rem;
     font-family: Montserrat;
-    font: normal normal 600 1.5/30px Montserrat;
+    font: normal normal 600 1.5rem Montserrat;
     letter-spacing: 0.25px;
     color: #0A1931;
     padding: 1rem;
@@ -541,4 +541,115 @@ body{
 
 .dNone{
     display: none;
+}
+
+@media only screen and (max-width: 480px){
+    .title{
+        font-size: 1.25rem;
+    }
+    .cancel{
+        font-size: 1rem;
+        height: max-content;
+    }
+    .heading{
+        align-items: center;
+        align-content: center;
+    }
+    header{
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding-top: 2.5rem;
+    }
+    header nav{
+        width: 90%;
+    }
+    header nav ul li{
+        font-size: .8rem;
+        margin: 0;
+        padding: .5rem;
+        height: 3.5rem;
+    }
+    nav ul{
+        padding: .5rem;
+        width: 95% ;
+    }
+    .navI{
+        top: 1.5rem ;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    main>section{
+        width: 90% !important;
+    }
+    .login{
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .login>div>div{
+        margin-left: .5rem;
+    }
+    .changelog{
+        margin-top: .5rem;
+    }
+    .secTitle{
+        font-size: 1.25rem;
+    }
+    .paymentForm,
+    .addrform{
+        margin-left: 0;
+    }
+    .shippingAddressForm label:not(.notLable) {
+        font-size: 1.1rem;
+    }
+    .shippingAddressForm label input {
+        font-size: 1.25rem;
+    }
+    .notLable{
+        display: block;
+        font-size: 1.1rem;
+    }
+    .SubmitBtn{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .itemsandmislenous{
+        margin-top: 5rem;
+    }
+    .itemsandmislenous .order{
+        padding: .5rem;
+    }
+    .orderBook img{
+        width: 25%;
+    }
+    .orderTitle{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .orderBookTitle{
+        font-weight: 500;
+    }
+    .price{
+        font-size: 1.25rem;
+    }
+    .orderBookQty{
+        font-size: 1.1rem ;
+        margin-left: .5rem;
+    }
+    .promo input{
+        padding: .5rem;
+        width: 100%;
+    }
+    .promo button{
+        width: 95%;
+        margin: 0;
+        padding: .5rem;
+        margin-top: 1rem ;
+    }
+    .itemsReserved{
+        margin-top: 2.5rem;
+    }
 }
