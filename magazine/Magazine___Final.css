@@ -152,3 +152,33 @@ body {
 	letter-spacing: 0.46px;
 	color: #FFFFFF;
 }
+
+@media only screen and (max-width: 480px){
+	body{
+		padding: .5rem;
+	}
+	.content{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 'pic' 'details';
+	}
+	.content>img{
+		grid-area: pic;
+		width: 90%;
+	}
+	.content>div{
+		grid-area: details;
+		padding: .5rem;
+	}
+	.buyFrom{
+		width: 90%;
+		margin-top: 2rem;
+	}
+	.buyFrom>label{
+		width: 90%;
+		margin: .5rem 0rem .5rem 0rem ;
+	}
+	.buyFrom span{
+		font-size: 1rem;
+	}
+}
