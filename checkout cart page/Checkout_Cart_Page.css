@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -234,6 +235,8 @@ main {
 }
 
 .books {
+    padding: .5rem;
+    border-radius: 10px;
     margin: 2.8rem 0;
     display: flex;
     flex-direction: row;
@@ -398,6 +401,10 @@ input::-webkit-inner-spin-button {
     opacity: 1;
 }
 
+.bgRed{
+    background-color: #ff000024;
+}
+
 @media only screen and (max-width: 480px) {
     header {
         display: none;
@@ -407,32 +414,79 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
     }
 
-    .info>* {
-        margin: 1rem 0rem;
+    .info span {
+        line-height: 2.1rem;
+    }
+
+    .info span+span {
+        margin-top: 1rem;
     }
 
     .content {
         flex-direction: column;
-        align-items: stretch;
-        width: 100%;
+        align-items: center;
+        align-content: center;
     }
 
     .items {
-        width: calc(100% - 1rem);
-        padding: .5rem;
+        width: 90%;
+
     }
 
     .books {
-        background-color: rgba(241, 242, 255, 1);
+        position: relative;
+        padding: .5rem;
+        border-radius: 10px;
     }
 
+
     .bookDetails {
-        /* flex-direction: column; */
+        margin: 0 !important;
         flex-wrap: nowrap;
+    }
+
+    .bookDetails img {
+        width: 5rem;
+        height: auto;
     }
 
     .details {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1rem;
+    }
+    .bookName{
+        font-size: 1.5rem;
+    }
+    .bookStock{
+        font-size: 1.1rem;
+    }
+    .bookCondition{
+        font-size: 1.25rem;
+    }
+    .bookQuantity{
+        font-size: 1.25rem;
+    }
+    .bookPrices{
+        margin: 0 !important;
+    }
+    .bookPrice{
+        font-size: 1.5rem;
+    }
+    .bookCheck{
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
+    .bookCheck input{
+        width: 100%;
+        height: 100%;
+    }
+    .price{
+        width: 80%;
+        
+    }
+    .buyBtn{
+        margin-top: 1rem;
     }
 }

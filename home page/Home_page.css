@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Balsamiq+Sans:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: #0A1931;
+}
+
+header {
+    background-color: #0A1931;
+    padding: .25rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
 }
 
 header nav {
@@ -14,7 +25,8 @@ header nav {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .iconOutlined {
@@ -1043,7 +1055,7 @@ footer nav {
     justify-content: flex-end;
     padding: 3rem;
     border-radius: 64px;
-    --detailsDisplay:none;
+    --detailsDisplay: none;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1070,202 +1082,286 @@ footer nav {
     color: #D5D5D5;
 }
 
-.articles1{
-    --url : url('Rectangle_2234@2x.png');
-    background:var(--url);
+.articles1 {
+    --url: url('Rectangle_2234@2x.png');
+    background: var(--url);
     background-size: cover;
 }
 
-.articles2{
+.articles2 {
     --url: url('Rectangle_2235@2x.png');
-    background:var(--url);
+    background: var(--url);
     background-size: cover;
 }
 
-.articles:hover{
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),
-      var(--url);
+.articles:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        var(--url);
     background-size: cover;
-    --detailsDisplay:block;
+    --detailsDisplay: block;
 }
 
 
 
-.articles .details{
+.articles .details {
     display: var(--detailsDisplay);
 }
 
 @media only screen and (max-width : 480px) {
-    header nav{
-        flex-direction: column ;
+    header nav {
+        flex-direction: column;
         gap: 1rem;
         align-items: center;
     }
-    .navUl{
+
+    .navUl {
         flex-direction: column;
     }
-    .navUl>*+*{
+
+    .navUl>*+* {
         margin-top: 1rem !important;
     }
-    section{
+
+    section {
         padding: 10vw 5vw !important;
     }
-    .Title{
-        font-size: 1.99rem !important ;
+
+    .Title {
+        font-size: 1.99rem !important;
     }
-    .titleCatType{
-        flex-direction: column ;
+
+    .titleCatType {
+        flex-direction: column;
         padding: 5px;
-        width: 100% ;
+        width: 100%;
     }
-    #searchName{
-        flex-direction: column ;
+
+    #searchName {
+        flex-direction: column;
     }
-    #searchName div{
+
+    #searchName div {
         align-content: center;
         text-align: center;
     }
-    .bardiv{
-        margin-top:  1rem;
+
+    .bardiv {
+        margin-top: 1rem;
         border: none;
         padding: 1rem !important;
         border-top: 2px solid #0A1931;
     }
-    #searchName div h3{
+
+    #searchName div h3 {
         font: normal normal 700 2rem Comfortaa;
     }
-    #searchName div p{
+
+    #searchName div p {
         font: normal normal 700 1.5rem Comfortaa;
     }
-    #why{
-        flex-direction: column ;
+
+    #why {
+        flex-direction: column;
     }
-    .features{
+
+    .features {
         width: 90%;
     }
-    .featureCard{
+
+    .featureCard {
         width: 100%;
     }
-    #why .text{
+
+    #why .text {
         width: 90%;
     }
-    .text a{
-        text-align: center ;
-        padding: 1rem ;
+
+    .text a {
+        text-align: center;
+        padding: 1rem;
     }
-    .filterDiv{
+
+    .filterDiv {
         flex-direction: column;
     }
-    #filterList{
+
+    #filterList {
         flex-direction: column;
     }
-    #filterListControlBtn{
-        padding-top: 2rem ;
+
+    #filterListControlBtn {
+        padding-top: 2rem;
     }
-    .categoriesFilter{
-        padding: 1rem ;
+
+    .categoriesFilter {
+        padding: 1rem;
         flex-wrap: wrap;
     }
-    .booksDiv{
+
+    .booksDiv {
         width: 100%;
     }
-    .booksLearnMore{
+
+    .booksLearnMore {
         margin-top: 2.5rem;
     }
-    #requestForm{
-        padding: 1rem ;
-        grid-template-rows: repeat(5,1fr);
+
+    #requestForm {
+        padding: 1rem;
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
             'fName'
             'mNo'
             'email'
             'author'
-            'submit' ;
+            'submit';
     }
-    #requestForm > *{
-        padding: 1rem ;
+
+    #requestForm>* {
+        padding: 1rem;
     }
-    .questions{
-        width: 100% ;
+
+    .questions {
+        width: 100%;
     }
-    .questions details{
-        padding: 1rem ;
+
+    .questions details {
+        padding: 1rem;
         width: 90%;
     }
-    #meetUp form{
-        flex-direction: column ;
+
+    #meetUp form {
+        flex-direction: column;
+        width: 90%;
     }
-    #newsAndBlogs>div{
-        flex-direction: column ;
+
+    #meetUp form input {
+        width: 100%;
     }
-    .articles{
+
+    #newsAndBlogs>div {
+        flex-direction: column;
+    }
+
+    .articles {
         width: 90%;
         padding: 5%;
-        margin: 5% ;
+        margin: 5%;
     }
-    .newsLatterSubscribe label{
+
+    .newsLatterSubscribe label {
         text-align: center;
     }
-    .newsLatterSubscribe{
+
+    .newsLatterSubscribe {
         flex-wrap: wrap;
-        justify-content: center ;
-        align-items: center ;
+        justify-content: center;
+        align-items: center;
     }
-    .newsLatterSubscribe form{
+
+    .newsLatterSubscribe form {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    .newsLatterSubscribe form button{
-        margin: 1rem 0rem 0rem 0rem ;
+
+    .newsLatterSubscribe form button {
+        margin: 1rem 0rem 0rem 0rem;
     }
-    footer nav{
-        flex-wrap: wrap ;
+
+    footer nav {
+        flex-wrap: wrap;
     }
-    .footerNavDiv{
+
+    .footerNavDiv {
         margin-top: 2.5rem;
     }
-    .footerNavDiv .footerMainHead{
+
+    .footerNavDiv .footerMainHead {
         text-align: center;
     }
+
     #books>div {
         width: 90%;
     }
-    .bookName{
-        font-size: 1rem ;
+
+    .bookName {
+        font-size: 1rem;
     }
-    .bookNamePrice{
-        margin: .5rem; 
+
+    .bookNamePrice {
+        margin: .5rem;
     }
-    .fsBig{
+
+    .fsBig {
         font-size: .75rem;
     }
-    .striked{
-        font-size: .5rem; 
+
+    .striked {
+        font-size: .5rem;
     }
-    .booksDiv hr{
-        margin-top: .5rem; 
+
+    .booksDiv hr {
+        margin-top: .5rem;
     }
-    .conditionAndRating{
+
+    .conditionAndRating {
         flex-wrap: wrap;
     }
-    .conditionAndRating select{
-        font-size: 1.25rem ;
+
+    .conditionAndRating select {
+        font-size: 1.25rem;
     }
-    .bookRating{
+
+    .bookRating {
         width: 100%;
         margin-top: .5rem;
     }
-    .bookRating *{
-        font-size: 1.1rem !important; 
+
+    .bookRating * {
+        font-size: 1.1rem !important;
     }
-    .addToCartBtn{
+
+    .addToCartBtn {
         font-size: 1.25rem;
     }
-    .hotSell:before{
+
+    .hotSell:before {
         font-size: .75rem;
+    }
+
+    #hamburgerMobile {
+        display: block !important;
+        width: 100%;
+        position: relative;
+        height: 3rem;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    #hamburgerMobile::after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: 'menu';
+        color: #FEF8E6;
+        font-size: 3rem;
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+    }
+    .hamburgerOpened:after{
+        content: 'close' !important;
     }
 }
