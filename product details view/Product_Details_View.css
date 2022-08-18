@@ -13,6 +13,14 @@ body {
     background-color: #0A1931;
 }
 
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #0a1931;
+    z-index: 100000;
+}
+
 header nav {
     display: flex;
     flex-direction: row;
