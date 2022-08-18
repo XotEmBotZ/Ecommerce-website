@@ -38,3 +38,20 @@ for (ele of ele){
     console.log(btns)
     console.log(inp)
 }
+
+
+let hamburgerDiv = document.getElementById("hamburgerMobile")
+let nav = document.getElementById("nav")
+hamburgerDiv.addEventListener('click',e=>{
+    if (nav.classList.contains('dNone')){
+        nav.classList.remove("dNone")
+        hamburgerDiv.classList.add("hamburgerOpened")
+    }else{
+        nav.classList.add("dNone")
+        hamburgerDiv.classList.remove("hamburgerOpened")
+    }
+})
+
+if (window.screen.width<=480){
+    nav.classList.add('dNone');
+}
