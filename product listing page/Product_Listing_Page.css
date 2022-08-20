@@ -834,7 +834,7 @@ body {
         align-items: center;
         align-content: center;
     } 
-    .filter{
+    #mainContent .filter{
         width: 90vw;
         height: 100vw;
         transform: translateX(-1000%);
@@ -845,7 +845,7 @@ body {
         bottom: 6rem;
         left: 0;
     }
-    .filter[data-active="true"]{
+    #mainContent .filter[data-active="true"]{
         transform: translateX(1%);
     }
     .filterActiveBtnMobile{
