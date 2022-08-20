@@ -24,7 +24,11 @@
 <body>
 
 	<header>
-		<nav>
+		<div id="hamburgerMobile" class="dNone">
+			<img src="" alt="logo" class="logo">
+
+		</div>
+		<nav id="nav">
 			<img src="" alt="logo">
 			<ul class="navLinks">
 				<li><a href="">Blog</a></li>
@@ -39,7 +43,7 @@
 					<input type="text" title="filter">
 				</li>
 			</ul>
-			<ul class="personal">
+			<ul class="personal icoUl">
 				<li><i class="material-symbols-outlined headerIcon">shopping_bag</i></li>
 				<li><i class="material-symbols-outlined headerIcon">person</i></li>
 			</ul>
@@ -72,7 +76,10 @@
 			<input type="search" name="filterSearch" id="filterSearch" title="search">
 		</section>
 		<section id="mainContent">
-			<div class="filter">
+			<div class="filterActiveBtnMobile dNone" id="filterActiveBtnMobile">
+				<i class="material-symbols-outlined">filter_list</i>
+			</div>
+			<div class="filter" data-active="false" id="mainFilter">
 				<div class="head">
 					<h2>Filter</h2>
 					<button><i class="material-symbols-outlined">cancel</i> Clear</button>
